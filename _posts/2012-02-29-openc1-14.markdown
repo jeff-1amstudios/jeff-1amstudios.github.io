@@ -1,0 +1,30 @@
+---
+layout: post
+title: OpenC1 1.4
+date: '2012-03-01T17:53:00.004+13:00'
+author: Jeff
+tags:
+- OpenC1
+modified_time: '2014-03-18T17:31:10.017+13:00'
+thumbnail: http://img.youtube.com/vi/0afl6ruHZgI/default.jpg
+blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-7241259682132614601
+blogger_orig_url: http://blog.1amstudios.com/2012/03/openc1-14.html
+---
+So I meant to post this a couple of weeks back, but things have been pretty crazy busy with moving to San Francisco from New Zealand.
+
+OpenC1 1.4 is available now from [http://www.1amstudios.com/projects/openc1](http://www.1amstudios.com/projects/openc1)
+
+Changes
+
+*   Downloads and uses free C1 demo, SplatPack demo and SplatPack Xmas demo content
+*   Fixed (for real this time) ATi rendering issues
+*   Lots of small bugs
+*   Added pedestrian gibs
+*   Added support for some strange SplatPack .pix files
+*   Fixed gameplay issues like being awarded credits and time for the AI running over peds
+
+Edit: OpenC1 1.4 source code now available on [http://code.google.com/p/openc1](http://code.google.com/p/openc1). Go check it out!
+
+<div class="video">
+<div class="videowrapper"><iframe src="//www.youtube.com/embed/0afl6ruHZgI" frameborder="0" allowfullscreen></iframe></div>
+</div>

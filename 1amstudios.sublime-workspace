@@ -1,0 +1,656 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"scr",
+				"switching_screen"
+			],
+			[
+				"raste",
+				"raster_1"
+			],
+			[
+				"color_",
+				"color_shift_upper"
+			],
+			[
+				"scre",
+				"screen_base"
+			],
+			[
+				"screen",
+				"screen_swap_12"
+			],
+			[
+				"irq_han",
+				"irq_handler_exit"
+			],
+			[
+				"floor",
+				"floor_height"
+			],
+			[
+				"ceil",
+				"ceil_height"
+			],
+			[
+				"level_rende",
+				"level_render_row"
+			],
+			[
+				"level_ren",
+				"level_render_row"
+			],
+			[
+				"scren",
+				"screen_row"
+			],
+			[
+				"level",
+				"level_data"
+			],
+			[
+				"allow",
+				"allowedCommandsWhenUnlicensed"
+			],
+			[
+				"render",
+				"renderSysDumpsForHost"
+			],
+			[
+				"En",
+				"Engineer"
+			],
+			[
+				"copy",
+				"copying-to-pc"
+			],
+			[
+				"Dotfu",
+				"dotfuscatorStackViewer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_posts/2014-12-07-c64-smooth-scrolling.markdown",
+			"settings":
+			{
+				"buffer_size": 7303,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 425,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-08-04-new-opennfs1-v12-video.markdown",
+			"settings":
+			{
+				"buffer_size": 717,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style2.css",
+			"settings":
+			{
+				"buffer_size": 2585,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/C64-6502.sublime-build",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jeff/code/1amstudios-blog",
+		"/Users/jeff/code/1amstudios-blog/_data",
+		"/Users/jeff/code/1amstudios-blog/_drafts",
+		"/Users/jeff/code/1amstudios-blog/_layouts",
+		"/Users/jeff/code/1amstudios-blog/_sass",
+		"/Users/jeff/code/1amstudios-blog/css"
+	],
+	"file_history":
+	[
+		"/Users/jeff/code/1amstudios-blog/_data/projects.yml",
+		"/Users/jeff/code/1amstudios-blog/css/style2.css",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-12-04-sorry-ive-been-quiet-for-while-there.markdown",
+		"/Users/jeff/code/1amstudios-blog/_config.yml",
+		"/Users/jeff/code/1amstudios-blog/projects/openc1.html",
+		"/Users/jeff/code/1amstudios-blog/_posts/2014-12-02-carma1-symbols-dumped.markdown",
+		"/Users/jeff/code/1amstudios-blog/_layouts/tag_index.html",
+		"/Users/jeff/code/1amstudios-blog/_layouts/post.html",
+		"/Users/jeff/code/1amstudios-blog/projects/opennfs1.html",
+		"/Users/jeff/code/1amstudios-blog/projects/projects-index.html",
+		"/Users/jeff/code/1amstudios-blog/_layouts/page.html",
+		"/Users/jeff/code/1amstudios-blog/projects/sharepod.html",
+		"/Users/jeff/code/1amstudios-blog/projects/webdebuggermac.html",
+		"/Users/jeff/code/1amstudios-blog/_posts/2014-05-24-need-for-speed-xna-update.markdown",
+		"/Users/jeff/code/1amstudios-blog/projects/iphonediskdrive.html",
+		"/Users/jeff/code/1amstudios-blog/projects/ituneslibraryeditor.html",
+		"/Users/jeff/code/1amstudios-blog/_includes/header.html",
+		"/Users/jeff/code/1amstudios-blog/_layouts/default.html",
+		"/Users/jeff/code/1amstudios-blog/_sass/_icons.scss",
+		"/Users/jeff/code/1amstudios-blog/css/main.scss",
+		"/Users/jeff/code/1amstudios-blog/index.html",
+		"/Users/jeff/code/1amstudios-blog/_includes/head.html",
+		"/Users/jeff/code/1amstudios-blog/js/jquery-2.1.1.min.js",
+		"/Users/jeff/code/1amstudios-blog/_includes/footer.html",
+		"/Users/jeff/code/1amstudios-blog/_sass/_base.scss",
+		"/Users/jeff/code/1amstudios-blog/_posts/2014-11-14-welcome-to-jekyll.markdown",
+		"/Users/jeff/code/1amstudios-blog/projects/index.php",
+		"/Users/jeff/code/1amstudios-blog/_posts/2012-02-29-openc1-14.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2012-03-13-7-zip-mac-01.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2011-01-09-thanks-for-all-feedback-1.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-12-22-openc1-v1.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-10-15-opencarmageddon-demo-is-out-theres-2.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-10-15-130am-fixed-some-pedestrian-bugs-some.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-10-15-its-940pm-im-drinking-lots-of-diet-coke.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-10-07-demo-out-next-week.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-09-14-pedestrians-101-its-1205am-been-working.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-09-14-125am-pedestrians-animations-are-now.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-09-06-good-news-ui-is-pretty-much-finished.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-09-03-got-map-view-working.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-06-30-new-video-showing-updated-vehicle.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-08-25-ive-been-really-busy-as-usual-with-work.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-06-25-damage-effects-update.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-06-23-still-here-still-working-on-carmageddon.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-05-26-had-great-gamedev-session-last-night.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-05-12-ive-finally-upgraded-my-main-dev-box-to.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-05-02-since-there-have-been-several-attempts.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-04-29-late-last-night-i-reimplemented-non.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-04-27-more-screenshots.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-04-26-yes-i-am-still-working-on-this-i-just.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-03-14-opponents-video.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-03-08-im-tired-after-night-of-coding-so-i.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-03-03-still-working-on-special-volumes.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-03-01-still-working-on-lighting-heres-what.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-03-01-phew-its-been-busy-night.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-02-28-ive-got-basic-directional-lighting.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-02-24-im-halfway-most-of-way-through.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-02-07-time-for-some-new-screenshots-these.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-02-02-i-finally-tracked-down-shayde-shayde.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-01-31-ive-almost-finished-material-modifiers.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-01-17-physics-test-3.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-12-25-today-i-finished-support-for-vehicles.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-12-12-ive-been-struggling-for-while-to.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-12-04-heres-latest-video.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-12-03-ive-been-working-on-getting-car-and.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-11-17-ive-got-noncars-smashable-track-parts.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-11-11-physics-test-2.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-11-06-got-car-shadows-going.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-11-02-got-wheel-models-hooked-up-boundingbox.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-10-30-couple-of-new-screenshots-finally.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-10-20-had-bit-of-break-from-carmageddonxna-as.html",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-10-20-had-bit-of-break-from-carmageddonxna-as.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-08-15-i-am-evaluating-physx-through.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-08-14-flic-parser.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-08-10-i-havent-had-much-time-to-work-on-this.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-08-03-ok-im-90-of-way-to-figuring-out-crush.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-20-jiglibx-physics-test-101-ive-got.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-18-finally-after-heaps-of-hard-work-video.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-12-ive-worked-out-how-tracks-are-put.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-12-bright-white-curb-in-previous.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-11-success.markdown",
+		"/Users/jeff/code/1amstudios-blog/_layouts/project.html",
+		"/Users/jeff/code/1amstudios-blog/projects/iphonediskdrive/index.php",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-05-26-had-great-gamedev-session-last-night.html",
+		"/Users/jeff/code/1amstudios-blog/projects/iphonediskdrive2/index.php",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-11-heres-hiddenmultiplayernot-sure-track.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-10-ive-got.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-04-carmageddon-xna.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-01-22-welcome.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2008-12-09-making-it-playable.html",
+		"/Users/jeff/code/1amstudios-blog/_posts/2007-09-17-platform-jumper-screenshots.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2008-10-06-screenshots.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2008-10-28-new-chase-camera.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2009-07-12-ive-got-cars-and-tracks-loading-from.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-10-26-ive-had-big-increase-in-traffic-since.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-10-19-i-just-cease-and-desist-order-from.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-10-17-opencarmageddon-v1.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2010-10-17-thanks-for-all-feedback-i-didnt-know-so.markdown",
+		"/Users/jeff/code/1amstudios-blog/_posts/2014-08-04-new-opennfs1-v12-video.markdown",
+		"/Users/jeff/code/1amstudios-blog/css/bootstrap.css",
+		"/Users/jeff/code/1amstudios-blog/_sass/_syntax-highlighting.scss",
+		"/Users/jeff/code/1amstudios-blog/js/image-grid.js",
+		"/Users/jeff/Desktop/7zip_mac.png",
+		"/Users/jeff/code/c64/print_string.asm",
+		"/Users/jeff/code/c64/resources/level1.bin",
+		"/Users/jeff/code/c64/macros.asm",
+		"/Users/jeff/code/c64/resources/level2.bin",
+		"/Users/jeff/code/c64/.monitor_cmds",
+		"/Users/jeff/code/c64/setup_irq.asm",
+		"/Users/jeff/code/c64/test.asm",
+		"/Users/jeff/dev/stresstest.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/mgmtd/modules/cpp/md_ssc_mgr.cc",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/cli/modules/python/cli_ssc_utils.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/lib/libcli/python/ssc/cli_ssc.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/cli/modules/python/cli_ssc_license_cmds.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/web3/dj/webui/defs/page_defs.py",
+		"/Users/jeff/dev/ssc/lumberjack-stingray/disableclicommands.diff",
+		"/Users/jeff/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/jeff/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/test/biscuit/tests/rest_resource/ssc_import_test.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/web3/modules/ssc/ssc_host_sysdumps/support.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/web3/modules/ssc/ssc_host_sysdumps/styles.css",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/web3/modules/ssc/ssc_host_sysdumps/script.js",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/web3/modules/ssc/ssc_host_sysdumps/__init__.py",
+		"/Users/jeff/dev/ssc/lumberjack-stingray/ssc_lumberjack/lumberjack-svc-ssc-fssync/lumberjack_svc_ssc_fssync/common.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/cli/modules/python/cli_ssc_service.py",
+		"/Users/jeff/dev/ssc/lumberjack-stingray/ssc_lumberjack/lumberjack-svc-ssc-fssync/lumberjack_svc_ssc_fssync/commands.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/cli/modules/python/cli_ssc_hwappliance_cluster_cmds.py",
+		"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/cli/modules/python/cli_ssc_hwutils.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"~/code/1amstudios-blog",
+			"~/code/c64",
+			"/Users/jeff/dev/ssc/",
+			"/Users/jeff/dev/ssc/segway_dev_branch/mgmt/appliances/rbt_ssc/",
+			"/Users/jeff/dev/segway_dev_branch/mgmt/appliances/rbt_ssc/",
+			"/Users/jeff/dev/segway_dev_branch/mgmt/appliances/rbt_ssc/src/bin/web3"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"65",
+			"20",
+			"blog.",
+			"video",
+			"github",
+			"post",
+			"content",
+			";",
+			" = ",
+			"$p->",
+			"img_count",
+			"%}",
+			"&nbsp;",
+			">\n",
+			"400px",
+			"line-height",
+			"line-",
+			"size",
+			"_counter",
+			"irq_delay_",
+			"level_char",
+			"screen_shift",
+			"d020",
+			"color_shift",
+			"$d020",
+			"color_shift",
+			"level_current_col",
+			"screen,",
+			"0400",
+			"+set16",
+			"screen_col",
+			"level_current_col",
+			"ceiling",
+			".",
+			"B",
+			"y",
+			"102",
+			"Y",
+			"1",
+			"color_ptr",
+			"template.css",
+			"import-lic",
+			"License imported successfully.",
+			"import_ssc_license_param",
+			"import-lic",
+			"Logout reason",
+			"Sign in to",
+			"login",
+			"import_license_file",
+			"import-lic",
+			"PrefixCommand",
+			"list the cluster flie replication service member",
+			"check_ps_yarder_ssc_fssync",
+			"arder_ssc_fssync is not running",
+			"ssc appliance",
+			"import-lic",
+			"Command('ssc import-lic",
+			"ssc service",
+			"list_controller_member",
+			"contextcommand",
+			"ssc-cluster gluster",
+			"ssc-cluster controller",
+			"Command('ssc-cluster ",
+			"gluster configura",
+			"Command('ssc-cluster ",
+			"ssc-cl",
+			"ssc-cluster",
+			"cluster_resin",
+			"gluster configurations",
+			"gluster",
+			"SERVICE",
+			"ssc-cluster",
+			"SSCHostSysDumps",
+			"ssc-cluster",
+			"member list",
+			"ssc controller",
+			"ssc service",
+			"ssc applia",
+			"ssc service",
+			"import-host-qcw",
+			"ssc appliance",
+			"ssc log",
+			"ContextMode",
+			"Command(",
+			"def Command",
+			"show",
+			"ssc license list",
+			"upgrade",
+			"host_sys",
+			"sys dumps",
+			"model2",
+			"status",
+			"detailpane",
+			"disableser",
+			"addPane",
+			"bind_drop",
+			"addPane",
+			"bind_drop",
+			"flavor2",
+			"hostFl",
+			"host_fla",
+			"SSC_FLAVORS",
+			"host_flavor",
+			"host_flavors",
+			"small",
+			"flavor",
+			"host_user",
+			"ssc_host",
+			"sschost",
+			"ssc_hos",
+			"ssc_hostssc_host_sysdumps",
+			"ssc_host",
+			"rbt-module-ssc-host",
+			"Y.RBT.Module.SSCHost",
+			"SharePodLib",
+			"\">",
+			"hero",
+			"10px",
+			"margin-right:20px;",
+			"    margin-bottom:10px;",
+			"5px",
+			"px",
+			"jumbo2",
+			"json",
+			"delete"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			":   ",
+			"  ",
+			" ",
+			"  ",
+			" ",
+			"+set16im",
+			"B",
+			".",
+			"B",
+			"y",
+			"Y",
+			"Y.RBT.Module.SSCHostSysDumps",
+			"SharePod-lib"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_posts/2014-12-07-c64-smooth-scrolling.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1724,
+								1724
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 988.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								402,
+								402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2014-08-04-new-opennfs1-v12-video.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 717,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								661,
+								661
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/style2.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2585,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2268,
+								2268
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2031.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 187.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "1amstudios.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 468.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

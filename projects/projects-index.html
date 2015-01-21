@@ -1,0 +1,22 @@
+---
+layout: page
+permalink: /projects/
+title: Projects
+---
+
+  {% for p in site.data.projects %}
+  <div class="row">
+      
+          <a href="{{p.url}}">
+            <img src="{{p.img}}" alt="{{p.title}}" class="img-circular">
+          </a>
+          <a href="{{p.url}}">{{p.title}}</a>
+          <br>
+            <span style="color:#777">{{p.summary}}</span>
+  </div>
+  
+  {% endfor %}
+
+  <script type="text/javascript">
+    $("#projectsLink").attr("class", "active");
+  </script>

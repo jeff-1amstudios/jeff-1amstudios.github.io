@@ -1,0 +1,13 @@
+---
+layout: post
+title: Chase camera for fast-moving objects
+date: '2008-11-04T14:17:00.000+13:00'
+author: Jeff
+tags:
+- XNA
+modified_time: '2009-03-05T02:32:09.392+13:00'
+blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-5925962824029191624
+blogger_orig_url: http://blog.1amstudios.com/2008/11/chase-camera-for-fast-moving-objects.html
+---
+
+Chase cameras are great for creating a feeling of realistic motion.  For NFS, it means you can see the side of the car as you turn, and as the car accelerates and brakes it changes distance from the camera.<br /><br />The problem with a fast moving game like this one, is that the chase camera can start to get too far behind the object at high speed. <br /><br />Simply reducing the springiness doesn't work, as then the camera won't swing round the X-axis enough.<br /><br />I've used the <a href="http://creators.xna.com/en-US/sample/chasecamera">Chase Camera sample</a> for my camera, and added an extra ZStiffness property.  This controls how much the camera tries to keep up with the moving object. <br /><br />You can <a href="http://www.sturm.net.nz/xna/chasecamera.cs">download</a> it here :)

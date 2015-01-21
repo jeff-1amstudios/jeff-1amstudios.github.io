@@ -1,0 +1,14 @@
+---
+layout: post
+title: XNA Vehicle Physics
+date: '2008-10-28T09:31:00.000+13:00'
+author: Jeff
+tags:
+- XNA
+- Physics
+modified_time: '2009-03-05T02:32:09.490+13:00'
+blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-3081052567219294848
+blogger_orig_url: http://blog.1amstudios.com/2008/10/xna-vehicle-physics.html
+---
+
+I've tried several different physics engines for XNA:NFS.<br /><br />I tried <a href="http://www.codeplex.com/JigLibX">JigLibX</a> first, as it had the coolest vehicle demo, but after a considerable amount of pain getting it integrated, it was difficult to get the vehicle to behave in the same way as the demo.  And once it got to a certain speed, it started to rock side to side, with no obvious way to stop it.<br /><br />Up next was <a href="http://bepu-games.com/BEPUphysics/">BepuPhysics</a>.  This has a pretty basic looking vehicle demo, but was quite easy to integrate. <br />Basically you define your terrain (from a list of vertices), give it some properties like friction and gravity.  Then you create a Vehicle, attach some Wheels and hook up a button press to wheel.Accelerate();<br /><br />Getting it running initially only took a couple of hours - but trying to figure out values to make the vehicle behave correctly still had me tearing hair out days later. <br /><br />The problem is that its all a very fine balance of forces.  For example, one bumpy part of the track was pitching the vehicle backwards and forwards and looked ridiculous.  The solution?  Make the suspension softer to counteract the bumps.  But making the suspension softer caused it to wallow/float around the corners, sometimes tipping over.  The solution?  Increase the sideways stiffness, and give the car more mass to stabilise it.  This then pushed the softened suspension down too far.  And so it went on, round and round.<br /><br />After almost quitting the whole project, I saw <a href="http://hamboeck.blogspot.com/2008/03/marco-monsters-car-physics-demo-in-xna.html">this post</a> which is a simple 2d vehicle physics class.  Using it as a starting point, I've ended up writing my own vehicle physics.  Granted, it will never be anything as good as what Bepu/JigLibX could produce in the right hands, but it means I can choose which corners to cut and focus on making it a fun experience to drive.<br /><br />Demo coming soon :)

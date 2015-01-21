@@ -1,0 +1,198 @@
+---
+layout: project
+permalink: /projects/sharepod/
+title: SharePod
+images:
+- copy-to-pc.jpg
+- copying-to-pc.jpg
+- media-player.jpg
+- tag-editor.jpg
+- about.jpg
+---
+
+<div class="alert alert-success">SharePod was acquired by Macroplant LLC in 2013 and is no longer available from 1amstudios.com</div>
+
+<div class="row">
+    <div class="col-sm-7 post-content">
+        
+        <p>I first started building SharePod around 2005 when I got my first iPod - a <a href="http://en.wikipedia.org/wiki/File:3G_ipod_in_dock.jpg">3rd gen</a>. iTunes wasn't even available for Windows, and instead it came with MusicMatch Jukebox plus an iPod plugin - a really nasty solution!</p>
+        <p>I hated MusicMatch, and was familiar with hex editors from editing games, so I got to work reverse engineering the iPod's custom database file.  Back then there was no database encryption, which made it much easier.</p>
+
+        <p>The free, final 3.9.9 version supported these features:</p>
+
+        <ul>
+            <li>Edit music and videos</li>
+            <li>Edit playlists</li>
+            <li>Edit album art</li>
+            <li>View and backup photos</li>
+            <li>Copy music, videos and playlists from your iPod to PC and back to iPod</li>
+            <li>Import music and videos into your iTunes library, including playlists and ratings</li>
+            <li>Tag editing</li>
+            <li>Drag-drop between SharePod and Explorer</li>
+            <li>Simple, clean, quick to load and use with no unnessary complicated features</li>
+            <li>Support for iPhone and iTouch (Thanks to Nikias Bassen, Paul Sladen, Jonathan Beck, and Christophe Fergeau for making this possible)</li>
+        </ul>
+        <br>
+        <div class="alert alert-success">In 2013, when it was acquired, getsharepod.com served 10,000 page views and 6000 downloads per day.</div>
+        
+    </div>
+    <div class="col-sm-5">
+        <div class="thumbnail">
+            <img src="/img/sharepod/website.jpg" />
+            <div class="caption">getsharepod.com (2013)</div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="horizontal-line"></div>
+
+<div class="row">
+    <div class="img-grid col-lg-12"><img class="img-responsive" src="/img/sharepod/main-ui.jpg" /></div>
+</div>
+<div class="row">
+    <div class="img-grid col-lg-6 col-md-6 col-sm-6 col-xs-12"><img class="img-responsive" src="/img/sharepod/copy-to-pc.jpg" /></div>
+    <div class="img-grid col-lg-6 col-md-6 col-sm-6 col-xs-12"><img class="img-responsive" src="/img/sharepod/copying-to-pc.jpg" /></div>
+</div>
+<div class="row">
+    <div class="img-grid col-lg-6 col-md-6 col-sm-6 col-xs-12"><img class="img-responsive" src="/img/sharepod/media-player.jpg" /></div>
+    <div class="img-grid col-lg-6 col-md-6 col-sm-6 col-xs-12"><img class="img-responsive" src="/img/sharepod/tag-editor.jpg" /></div>
+</div>
+    
+<div class="horizontal-line"></div>
+        
+<h4>SharePod is actually two projects - the SharePod app and SharePod-lib</h4>
+SharePod-lib is a .Net library providing all the functionality to discover and interact with iPod/iPhone devices, which the SharePod app used. SharePod-lib was sold as a licensable component, or as source code.  Price ranged from $99-$399.
+<br>
+
+<ul>
+    <li>Automatically find connected iPods. </li>
+    <li>Enumerate and edit tracks, playlists, album artwork</li>
+    <li>Access and backup photo albums</li>
+    <li>Support for all iPods - iPhone, iPod Touch, iPod Shuffle, Mini, 3G, 4G (Photo), 5G (Video), 6G (Classic, Nano) </li>
+    <li>Copy tracks from an iPod to computer.</li>
+    <li>Support for complex databinding to Windows Forms controls. </li>
+    <li>Eject iPod from PC. </li>
+</ul>
+
+<br />
+
+Sample code:
+
+{% highlight c# %}
+/*
+  Initialize SharePod-lib and get a list of all tracks on an iPod.
+  GetConnectediPod() searches through all drives on the PC to find an iPod. 
+  For performance reasons, it should only be called once, and the IPod object it returns should be used for all subsequent iPod usage.
+*/
+
+IPod _iPod = null;
+try 
+{ 
+    _iPod = SharePodLib.IPod.GetConnectediPod();
+}
+catch (BaseSharePodException ex) 
+{ 
+    MessageBox.Show(ex.Message);
+    return; 
+} 
+foreach (Track track in _iPod.Tracks) 
+{ 
+    Debug.WriteLine(String.Format("{0} - {1} - {2}", track.Title, track.Artist, track.Album); 
+}
+{% endhighlight %}
+
+{% highlight c# %}
+/*
+  Add a new track to the iPod.
+  When setting the NewTrack properties, only FilePath and IsVideo are required.
+*/
+NewTrack newTrack = new NewTrack();
+newTrack.Title = "my new track";
+newTrack.Album = "my album";
+newTrack.FilePath = "c:\test.mp3";
+newTrack.IsVideo = false;
+newTrack.ArtworkFile = "c:\test-artwork.jpg";
+try 
+{ 
+    Track addedTrack = _iPod.Tracks.Add(newTrack);
+    addedTrack.Rating = new IPodRating(4); //give the new track a 4-star rating;
+    _iPod.SaveChanges();  // At this point, the actual file is on the iPod, so we should save database changes.
+}
+catch (BaseSharePodException ex) 
+{ 
+    MessageBox.Show(ex.Message);
+    return; 
+} 
+
+{% endhighlight %}
+
+{% highlight c# %}
+/*
+  Delete all tracks in the 'Abbey Road' album.
+*/
+try 
+{ 
+    for (int count = _iPod.Tracks.Count - 1; count >= 0; count--)
+    {
+        Track currentTrack = _iPod.Tracks[count];
+        if (currentTrack.Album == "Abbey Road")
+        {
+            _iPod.Tracks.Remove(currentTrack);
+        }
+    }
+    // At this point, the actual files have been deleted, so we should save database changes.
+    _iPod.SaveChanges();
+}
+catch (Exception ex) 
+{ 
+    MessageBox.Show(ex.Message);
+} 
+{% endhighlight %}
+
+{% highlight c# %}
+/*
+  Create a new playlist (called "New Playlist") and add a track to it.
+  Modify that track (in this case the comment field).
+  Use the the IPodExporter class to copy a track to the users c:\ drive:
+*/
+Track firstTrack = _iPod.Tracks[0];
+try { 
+    newPlaylist = iPod.Playlists.Add("New Playlist"); 
+    newPlaylist.AddTrack(firstTrack);
+} 
+catch (BaseSharePodException ex) 
+{ 
+    MessageBox.Show(ex.Message); 
+    return;
+} 
+firstTrack.Comment = "Modified by SharePod-lib"; 
+IPodFileExporter exporter = new IPodFileExporter(_iPod, "c:\\", "[Artist] - [Album] - [Title]"); 
+List<Track> tracksToCopy = new List<Track>();
+tracksToCopy.Add(firstTrack);
+exporter.SetTracksToCopy(tracksToCopy);
+// we could also say exporter.SetPlaylistsToCopy(...);
+exporter.PerformCopy();
+
+// before we close the program, we need to save any changes we've made.
+_iPod.SaveChanges(); 
+
+{% endhighlight %}
+
+{% highlight c# %}
+/*
+  Get notified when an iPod is connected or disconnected from the computer.
+*/
+
+//the event handlers
+SharePodLib.Device.iPodConnected += new iPodConnectedHandler(Device_iPodConnected);
+SharePodLib.Device.iPodDisconnected += new iPodDisconnectedHandler(Device_iPodDisconnected);
+
+//tell SharePod-lib to listen for new devices
+SharePodLib.Device.ListenForDeviceChanges(myWindow.Handle);
+ 
+public void Device_iPodConnected(IPod iPod) 
+{ 
+    //do stuff with new iPod!
+}
+{% endhighlight %}

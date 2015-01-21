@@ -1,0 +1,35 @@
+- title: "WebDebugger for Mac"
+  img: "/img/webdebuggermac/headers-panel.png"
+  summary: "Debugging HTTP proxy for OSX"
+  url: "/projects/webdebuggermac"
+  inCarousel: true
+
+- title:   "OpenNFS1"
+  img:   "/img/opennfs1/rx7-alpine.jpg"
+  summary:   "Open source remake of the original Need for Speed 1 game"
+  inCarousel:   true
+  url:   "/projects/opennfs1"
+
+- title:   "SharePod"
+  img:   "/img/sharepod2.jpg"
+  summary:   "Popular tool to pull music/videos/photos off your iPod"
+  inCarousel:   true
+  url:   "/projects/sharepod"
+
+- title:   "OpenC1"
+  img:   "/img/openc1-3.jpg"
+  summary:   "An open source remake of Carmageddon. Using XNA and Nvidia PhysX."
+  inCarousel:   true
+  url:   "/projects/openc1"
+
+- title:   "iPhone Disk Drive"
+  img:   "/img/iphonediskdrive/screenshot.jpg"
+  summary:   "Access files on your iPhone or iPod Touch through Windows Explorer"
+  url:   "/projects/iphonediskdrive"
+  inCarousel:   false
+
+- title:   "iTunes Library Editor"
+  img:   "/img/code-icon.png"
+  summary:   "Edit an iTunes music library without using the iTunes SDK"
+  url:   "/projects/ituneslibraryeditor"
+  inCarousel:   false

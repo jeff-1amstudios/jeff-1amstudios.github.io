@@ -1,0 +1,17 @@
+---
+layout: post
+title: Loading file formats
+date: '2009-07-11T13:08:00.001+12:00'
+author: Jeff
+tags:
+- XNA
+- OpenC1
+modified_time: '2010-10-21T08:35:03.140+13:00'
+blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-3684485301280845133
+blogger_orig_url: http://blog.1amstudios.com/2009/10/ive-got.html
+---
+I've got .MAT (materials), .ACT (actors), .DAT (models) and .PIX (textures) files loading.  What I need to do next is hook them together, so when you draw an actor, it draws the associated model using the associated materials, using the associated textures.  Currently having a bit of trouble getting the actor transformations to apply correctly to the model, but its in progress!
+
+Once that is done, getting the textures working should be pretty easy, then I can post some more interesting screenshots :)
+
+Im planning to use JigLibX (a free physics engine), which will hopefully mean we can jump ramps and smash lightposts/phoneboxes/etc.  I used it for a while for my Need For Speed remake, but at the time it just wasn't working well enough to be fun.  But I had a look at their demo app a couple of nights ago, and it looks great now :)

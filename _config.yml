@@ -1,0 +1,17 @@
+# Site settings
+title: 1am Studios
+email: jeff@1amstudios.com
+description: > # this means to ignore newlines until "baseurl:"
+  (description)
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://1amstudios.com" # the base hostname & protocol for your site
+twitter_username: 1amstudios
+github_username:  jeff-1amstudios
+
+# Build settings
+markdown: kramdown
+permalink:     pretty
+
+paginate: 4
+exclude: 
+    - deploy

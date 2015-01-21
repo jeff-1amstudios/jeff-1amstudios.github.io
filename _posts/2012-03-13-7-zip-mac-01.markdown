@@ -1,0 +1,19 @@
+---
+layout: post
+title: 7-Zip for Mac
+date: '2012-03-14T08:12:00.004+13:00'
+author: Jeff
+tags:
+- Xcode
+- 7-Zip
+modified_time: '2014-03-15T11:23:04.815+13:00'
+blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-3093393251858527972
+blogger_orig_url: http://blog.1amstudios.com/2012/03/7-zip-mac-01.html
+---
+I've been wanting to write an OSX app and get into Xcode recently, so I decided to make a nice Cocoa-based 7-Zip for Mac.  
+
+It was hard to understand the black magic behind InterfaceBuilder, but Apple has a bunch of nice examples built in to their help system which helped a lot. Objective-C is weird at first. You dont usually need to implement an interface (like C#), but if you name your methods the correct name, they just magically get called by the runtime. I found it makes discovering how to do things a RTFM/google/stackoverflow exercise, rather than inside your IDE.
+
+This is v0.1. There is no support yet for creating archives, zip files are set to open with 7-Zip Mac by default and there are no preferences. But its semi useful already I think. [link](http://www.1amstudios.com/projects/7zipMac/)
+
+![](/img/7zipmac/screenshot.png)
