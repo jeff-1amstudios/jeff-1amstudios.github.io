@@ -7,7 +7,6 @@ tags:
 - XNA
 - PlatformJumper
 modified_time: '2009-03-05T02:32:39.086+13:00'
-thumbnail: http://bp3.blogger.com/_xZUP9f4gN7g/Ru7hltkZR6I/AAAAAAAAABY/hInrGLT9ALc/s72-c/PlatformJumper2.jpg
 blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-7760654017454191660
 blogger_orig_url: http://blog.1amstudios.com/2007/09/platform-jumper-screenshots.html
 ---
@@ -19,10 +18,8 @@ I'm finding XNA is a really nice library to code against compared to DirectX.  T
 
 Heres a couple of screenshots
 
-![](http://bp3.blogger.com/_xZUP9f4gN7g/Ru7hltkZR6I/AAAAAAAAABY/hInrGLT9ALc/s1600/PlatformJumper2.jpg)
-![](http://bp3.blogger.com/_xZUP9f4gN7g/Ru7hNtkZR5I/AAAAAAAAABQ/uGJNYeOlU1U/s1600/PlatformJumper1.jpg)
-
-[Download the demo (Version 1)](http://www.sturm.net.nz/downloads/platformjumper.zip)
+![](/img/blogger/hInrGLT9ALc-PlatformJumper2.jpg)
+![](/img/blogger/uGJNYeOlU1U-PlatformJumper1.jpg)
 
 The demo features a randomly generated map with 10 coins to pick up.
 

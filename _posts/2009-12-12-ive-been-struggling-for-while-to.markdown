@@ -7,7 +7,6 @@ tags:
 - XNA
 - OpenC1
 modified_time: '2011-05-05T21:58:17.081+12:00'
-thumbnail: http://1.bp.blogspot.com/-25wkvgtuJqo/TcJz7ZOS8aI/AAAAAAAAAGw/NZvqKlRG0e4/s72-c/fov_45.jpg
 blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-6798946389127528601
 blogger_orig_url: http://blog.1amstudios.com/2009/12/ive-been-struggling-for-while-to.html
 ---
@@ -18,5 +17,5 @@ Heres a screenshot from the original game. Note the lampost and small amount of 
 
 Now my game, first using the default 45 degree field of view, and then 55.55 degree (as found in general.txt settings file). On the left, you can't see the lamppost and the buildings look taller and closer compared the shot on the right, where the buildings appear to stretch into the distance more. Its made a huge difference to the feel of the game as you drive around :)
 
-![](http://1.bp.blogspot.com/-25wkvgtuJqo/TcJz7ZOS8aI/AAAAAAAAAGw/NZvqKlRG0e4/s1600/fov_45.jpg)
-![](http://2.bp.blogspot.com/-FriadGwS0uc/TcJz85QHgEI/AAAAAAAAAG0/Aw1dwLaRVC8/s1600/fov_55.jpg)
+![](/img/blogger/NZvqKlRG0e4-fov_45.jpg)
+![](/img/blogger/Aw1dwLaRVC8-fov_55.jpg)

@@ -8,8 +8,6 @@ tags:
 - XNA
 - Profiling
 modified_time: '2009-03-05T02:32:09.529+13:00'
-thumbnail: http://1.bp.blogspot.com/_xZUP9f4gN7g/SPxhBn6AczI/AAAAAAAAADU/xs0o_fAYDMM/s72-c/nprof.jpg
-blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-4433302468980774624
 blogger_orig_url: http://blog.1amstudios.com/2008/10/xna-performance-profiling.html
 ---
 Finally having all the main bits working in XNA NFS, I was looking at the performance, which wasn't great, even on my fairly decent PC.
@@ -21,7 +19,7 @@ After going through my camera classes and not finding anything wrong, I figured 
 A quick google of XNA performance profiling turned up a link to [nProf](http://nprof.sourceforge.net/Site/Description.html) - a freeware &amp; open source .NET profiler.
 
 Here is a screenshot of the nProf window after running for a couple of minutes.
-[![](http://1.bp.blogspot.com/_xZUP9f4gN7g/SPxhBn6AczI/AAAAAAAAADU/xs0o_fAYDMM/s320/nprof.jpg)](http://1.bp.blogspot.com/_xZUP9f4gN7g/SPxhBn6AczI/AAAAAAAAADU/xs0o_fAYDMM/s1600-h/nprof.jpg)
+![](/img/blogger/xs0o_fAYDMM-nprof.jpg)
 
 Notice the selected line - the BasicEffect constructor.  The total amount of time spent in the BasicEffect.ctor() was almost as much as the total amount of time spent rendering the track!
 
@@ -37,4 +35,4 @@ So the lesson is (as I've been told and forgotten many times) is to profile then
 Life is good again :)
 
 And heres the latest screenshot, showing the corrected gamma and track barriers:
-[![](http://2.bp.blogspot.com/_xZUP9f4gN7g/SPxlL5yEeuI/AAAAAAAAADc/cdypNBn3lQo/s320/Image4.jpg)](http://2.bp.blogspot.com/_xZUP9f4gN7g/SPxlL5yEeuI/AAAAAAAAADc/cdypNBn3lQo/s1600-h/Image4.jpg)
+![](/img/blogger/cdypNBn3lQo-Image4.jpg)

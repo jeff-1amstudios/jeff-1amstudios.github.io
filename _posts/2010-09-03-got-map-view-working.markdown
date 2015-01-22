@@ -7,7 +7,6 @@ tags:
 - XNA
 - OpenC1
 modified_time: '2014-03-18T17:40:42.751+13:00'
-thumbnail: http://4.bp.blogspot.com/-OEbTBO4ghCs/TIGYS6LrSCI/AAAAAAAAAEg/clYR5DCarCs/s72-c/ndump045.jpg
 blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-2776497703881275573
 blogger_orig_url: http://blog.1amstudios.com/2010/09/got-map-view-working.html
 ---
@@ -15,6 +14,6 @@ Got the map view working. Was quite easy in the end - in the map data files is a
 
 I've overlaid the map instead of rendering the map over the whole screen and having the race view in a little window like the original.  Its not quite as cool, but at this point I want to keep moving onto other features.
 
-![](http://4.bp.blogspot.com/-OEbTBO4ghCs/TIGYS6LrSCI/AAAAAAAAAEg/clYR5DCarCs/ndump045.jpg)
+![](/img/blogger/clYR5DCarCs-ndump045.jpg)
 
 Next up is doing some basic UI for choosing races and cars :)

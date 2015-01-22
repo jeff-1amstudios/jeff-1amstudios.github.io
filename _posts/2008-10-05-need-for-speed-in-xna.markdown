@@ -20,5 +20,4 @@ The jury's still out on that one, but so  far I have a complete track and vehicl
 
 I am currently working on the car physics, using [this](http://hamboeck.blogspot.com/2008/03/marco-monsters-car-physics-demo-in-xna.html) as a starting point.
 
-Screenshots of the original game are a bit hard to find, heres one:
-[![](http://img266.imageshack.us/img266/350/nfs1rt0.jpg)](http://img266.imageshack.us/img266/350/nfs1rt0.jpg)
+[Screenshots of the original game](https://www.google.com/search?q=need+for+speed+1&tbm=isch)

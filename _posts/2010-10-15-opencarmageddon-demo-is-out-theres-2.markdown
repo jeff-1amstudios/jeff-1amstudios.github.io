@@ -7,7 +7,6 @@ tags:
 - XNA
 - OpenC1
 modified_time: '2010-10-21T08:21:05.068+13:00'
-blogger_id: tag:blogger.com,1999:blog-5214518507411835668.post-5121925082555639436
 blogger_orig_url: http://blog.1amstudios.com/2010/10/opencarmageddon-demo-is-out-theres-2.html
 ---
 **I've finally got to the point where this thing might be playable by someone else other than me!**
