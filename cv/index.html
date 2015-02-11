@@ -1,666 +1,1198 @@
-<!doctype html>
-<html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Jeffrey Harris</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	http://fonts.googleapis.com/css?family=Lato:400,700
-);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeffrey Harris</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+      .clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  word-spacing: 5px;
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
+}
 body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
+  font-family: 'Lato';
+  background: #f0f0f0;
+  color: #333333;
 }
-a {
-	color: #2ecc71;
+.main {
+  padding: 5px;
 }
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px;
 }
-p {
-	line-height: 1.5;
-	margin: 0;
-	text-align: justify;
+.card-nested {
+  min-height: 0;
+  margin-bottom: 10px;
+  border-width: 1px 0 0 0;
 }
-p + p {
-	margin-top: 10px;
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
 }
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-	text-align: justify;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .3;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 950px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
-}
-
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #ddd;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
+.card-nested:after {
+  clear: both;
 }
 @media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.background-card {
+  padding: 10px 20px;
+}
+.card-wrapper {
+  padding: 5px;
+}
+@media (max-width: 992px) {
+  .card-wrapper {
+    float: none !important;
+  }
+}
+.text-bolder {
+  font-weight: bold;
+}
+.background-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
+  text-align: center;
+}
+.background-details .detail .info {
+  width: 100%;
+}
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .mobile-title {
+  display: none;
+}
+@media (max-width: 480px) {
+  .background-details .detail .mobile-title {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .background-details .detail {
+    display: block;
+  }
+  .background-details .detail .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .detail .title {
+    display: none;
+  }
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+@media (max-width: 992px) {
+  .info .content.has-sidebar {
+    width: 100%;
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .info .content.has-sidebar {
+    padding: 0 2px;
+  }
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+}
+/*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+*/
+.floating-nav-trigger {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  background-color: white;
+  font-size: 1.5em;
+  color: #357ebd;
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.floating-nav-trigger .close-icon {
+  display: none;
+}
+.floating-nav-trigger:hover {
+  color: #1f496e;
+  background-color: #e6e6e6;
+  text-decoration: none;
+}
+.floating-nav-trigger.is-open {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.floating-nav-trigger.is-open .close-icon {
+  display: inherit;
+}
+.floating-nav-trigger.is-open .fa-bars {
+  display: none;
+}
+.floating-nav-trigger.is-open:hover {
+  background-color: white;
+}
+.floating-nav {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+  -o-transition: transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  z-index: 50;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  visibility: hidden;
+  overflow: hidden;
+}
+.floating-nav ul {
+  font-size: 1.2em;
+  margin: 0;
+}
+.floating-nav ul li {
+  border-bottom: 1px solid #eff2f6;
+}
+.floating-nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #357ebd;
+  display: block;
+}
+.floating-nav ul li a:hover {
+  color: #1f496e;
+}
+.floating-nav ul li i.fa {
+  margin-right: 10px;
+}
+.floating-nav ul li:last-child {
+  border-bottom: 0;
+}
+.floating-nav.is-visible {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s, visibility 0s 0s;
+  -o-transition: transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  .profile-card-wrapper {
+    position: relative;
+  }
+}
+.profile-pic {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .profile-pic {
+    padding: 10px 0;
+  }
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-details {
+    text-align: center;
+  }
+}
+.contact-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.contact-details .detail .icon {
+  padding: 0 10px;
+  color: #707070;
+}
+@media (max-width: 992px) {
+  .contact-details .detail .icon {
+    padding: 0 5px 0 0;
+  }
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.contact-details .detail .icon,
+.contact-details .detail .info {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+  }
+  .contact-details .detail .icon,
+  .contact-details .detail .info {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .contact-details .detail {
+    float: left;
+    width: 25%;
+  }
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+.link-github {
+  color: #454545;
+}
+.link-github:hover,
+.link-github:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.link-twitter {
+  color: #33ccff;
+}
+.link-twitter:hover,
+.link-twitter:focus {
+  text-decoration: none;
+  color: #00bfff;
+}
+.link-blog {
+  color: #f36f24;
+}
+.link-blog:hover,
+.link-blog:focus {
+  text-decoration: none;
+  color: #d8560c;
+}
+.link-linkedin {
+  color: #007bb6;
+}
+.link-linkedin:hover,
+.link-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+.link-skype {
+  color: #12a5f4;
+}
+.link-skype:hover,
+.link-skype:focus {
+  text-decoration: none;
+  color: #0986ca;
+}
+.link-stackoverflow {
+  color: #8e8e92;
+}
+.link-stackoverflow:hover,
+.link-stackoverflow:focus {
+  text-decoration: none;
+  color: #747479;
+}
+.link-soundcloud {
+  color: #e8822d;
+}
+.link-soundcloud:hover,
+.link-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.link-pinterest {
+  color: #bd091f;
+}
+.link-pinterest:hover,
+.link-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.link-vimeo {
+  color: #17b3e8;
+}
+.link-vimeo:hover,
+.link-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.link-behance {
+  color: #2c98cf;
+}
+.link-behance:hover,
+.link-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.link-codepen {
+  color: #1c1c1c;
+}
+.link-codepen:hover,
+.link-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.link-foursquare {
+  color: #fa4778;
+}
+.link-foursquare:hover,
+.link-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.link-reddit {
+  color: #545454;
+}
+.link-reddit:hover,
+.link-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.link-spotify {
+  color: #acd200;
+}
+.link-spotify:hover,
+.link-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.link-dribbble {
+  color: #ce366f;
+}
+.link-dribbble:hover,
+.link-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.link-facebook {
+  color: #4b6daa;
+}
+.link-facebook:hover,
+.link-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.link-angellist {
+  color: #000000;
+}
+.link-angellist:hover,
+.link-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-bitbucket {
+  color: #205081;
+}
+.link-bitbucket:hover,
+.link-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
+}
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .profile-pic img {
+    border-radius: 0;
+  }
+  .name-and-profession {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+  }
+  .floating-nav,
+  .floating-nav-trigger {
+    display: none;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
 }
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					
-					
-					<h1>
-						Jeffrey Harris
-					</h1>
-					
-					
-					<h2>
-						Sofware Engineer
-					</h2>
-					
-					
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+    </style>
+  </head>
 
-	
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">jeff@1amstudios.com</div>
-			</div>
-			
-			
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">(415) 652 9979</div>
-			</div>
-			
-			
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="http://www.1amstudios.com">http://www.1amstudios.com</a>
-				</div>
-			</div>
-			
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-		
-			<p>I love to design and build systems! I especially enjoy working with and learning from other people with the same passion for software.</p>
-		
-		</div>
-	</section>
-	
-	
+  <body itemscope itemtype="http://schema.org/Person">
+    <script>
+      window.onload = function () {
+        var toggleFloatingMenu = function() {
+          $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+          $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+        };
 
-	
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Riverbed Technology</span>
-					<span class="date">
-						2011 — Present
-					</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://riverbed.com">http://riverbed.com</a>
-				</div>
-				
-				
-				<div class="position">
-					Manager, Engineering
-				</div>
-				
-				
-				<div class="summary">
-					<p>Team lead to four developers and two QA engineers in the Web Content Optimization group</p>
-				</div>
-				
-				
+        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+        $( ".js-tooltip" ).tooltip();
+        $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+          e.preventDefault();
+          toggleFloatingMenu();
+        });
+        $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+      }
+    </script>
+    <div class="container-fluid">
+      <div class="row main clearfix">
+        <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
+          <i class="fa fa-bars"></i>
+          <span class="close-icon">&times;</span>
+        </a>
+        <nav class="floating-nav js-floating-nav">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#about">
+                <i class="fa fa-user"></i>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#work-experience">
+                <i class="fa fa-building"></i>
+                Work Experience
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <i class="fa fa-code"></i>
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#education">
+                <i class="fa fa-mortar-board"></i>
+                Education
+              </a>
+            </li>
+              <li>
+                <a href="#publications">
+                  <i class="fa fa-book"></i>
+                  Publications
+                </a>
+              </li>
+              <li>
+                <a href="#interests">
+                  <i class="fa fa-heart"></i>
+                  Interests
+                </a>
+              </li>
+          </ul>
+        </nav>
+
+        <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+          <div class="card profile-card">
+              <span class="profile-pic-container">
+                <div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Jeffrey Harris" src="http://www.gravatar.com/avatar/95be3056e70da94e28e2496411c55a3d?s=100&amp;r=pg&amp;d=mm" itemprop="image">
+                </div>
+
+                <div class="name-and-profession">
+                  <h3 class="text-center text-bolder name" itemprop="name"> Jeffrey Harris</h3>
+                  <h5 class="text-muted text-center" itemprop="jobTitle">Sofware Engineer</h5>
+                </div>
+              </span>
+              <hr>
+
+              <div class="contact-details clearfix">
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-location-arrow"></i>
+                    </span>
+
+                      <span class="info">
+                        Walnut Creek, California,
+                        US
+                      </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-phone"></i>
+                    </span>
+
+                    <span class="info" itemprop="telephone">
+                      (415) 652 9979
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-envelope"></i>
+                    </span>
+
+                    <span class="info">
+                      <a href="mailto:jeff@1amstudios.com" class="link-disguise" itemprop="email">jeff@1amstudios.com</a>
+                    </span>
+                  </div>
+
+              </div>
+
+              <hr>
+
+              <div class="social-links text-center">
+                                <a class="social-link link-blog"
+                       href="http://www.1amstudios.com" target="_blank">http://1amstudios.com</a>
 				<br>
-				<ul class="highlights">
+                  <a class="fa fa-github fa-2x social-link link-github"
+                       href="//github.com/jeff-1amstudios" target="_blank"></a>
+              </div>
+          </div>
+        </section>
 
-					<li class="bullet">Ported the Aptimize Windows/C# codebase to Linux/C++ with 3 other developers</li>
-					<li class="bullet">Helped implement the 'Image Stream' feature (server side C++, client side Javascript) which I co-designed at Aptimize Ltd (see below).</li>
-					<li class="bullet">Mentored junior team members on clean design and implementations</li>
-					<li class="bullet">Designed and built the automated QA framework used every night which enabled our QA team to focus on testing new features instead of regressions</li>
-					<li class="bullet">Implemented a Javascript minifier using ANTLR lexer</li>
-					<li class="bullet">Implemented tools used by SEs to troubleshoot and show performance improvements</li>
-					
-				</ul>
-				
-			</div>
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Aptimize Ltd</span>
-					<span class="date">
-						2009 — 2011
-					</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://aptimize.com/">http://aptimize.com/</a>
-				</div>
-				
-				
-				<div class="position">
-					Lead Software Development Engineer
-				</div>
-				
-				
-				<div class="summary">
-					<p>Designed and implemented large parts of the Aptimize Web Content Optimization engine.</p>
-				</div>
-				<br>
-				<ul class="highlights">
-					
-					<li class="bullet">Team lead to three developers and one QA engineer</li>
-					
-					<li class="bullet">Worked on all parts of the Web Content Optimization engine, including the C# core engine, the C++ IIS bindings, the C# Configuration tool.</li>
-					
-					<li class="bullet">Co-designed and prototyped an &#x27;Image Stream&#x27; feature which serves multiple images to a browser in a single request.  I am one of two authors on the US Patent we hold for this invention.</li>
-					
-					<li class="bullet">Wrote an enhancement to the Microsoft deflate implementation to create a deflate stream with multiple individually compressed blocks. This allowed us to sell to customers who required better performance on large HTML documents.</li>
-					
-					<li class="bullet">Designed and built a tool to serve an exact copy of a website based on a saved HTTP capture, used daily by our SEs for configuring customer websites.</li>
-					<li class="bullet">Aptimize was acquired by Riverbed in 2011</li>
-				</ul>
-				
-			</div>
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Intergen Ltd</span>
-					<span class="date">
-						2006 — 2009
-					</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://intergen.co.nz/">http://intergen.co.nz</a>
-				</div>
-				
-				
-				<div class="position">
-					Software Development Engineer
-				</div>
-				
-				
-				<div class="summary">
-					<p></p>
-				</div>
-				
-				
-				<br>
-				<ul class="highlights">
-					
-					<li class="bullet">Part of a team hand-picked by the CTO to build an online task management system.  Aptimize was spun off, based on this technology</li>
-					<li>Designed and implemented large parts of the C# back end infrastructure and front end HTML and javascript</li>
-					
-				</ul>
-				
-			</div>
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Optimation Ltd</span>
-					<span class="date">
-						2004 — 2006
-					</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://actionthis.com/">http://actionthis.com/</a>
-				</div>				
-				
-				<div class="position">
-					Software Development Engineer
-				</div>				
-			</div>
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Foodstuffs Ltd</span>
-					<span class="date">
-						2003 — 2004
-					</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://www.foodstuffs.co.nz">http://www.foodstuffs.co.nz</a>
-				</div>				
-				
-				<div class="position">
-					Software Development Engineer
-				</div>				
-			</div>
-			
-			</div>
-		</div>
-	</section>
-	
-	
-	<section id="projects" class="row">
-		<aside class="col-sm-3">
-			<h3>Personal projects</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>SharePod</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://1amstudios.com/projects/sharepod">http://1amstudios.com/projects/sharepod</a>
-				</div>
-				
-				
-				<div class="position">
-					&nbsp;
-				</div>
-				
-				
-				<div class="summary">
-					<p>Windows app to manage music and photos on iPods and iPhones</p>
-				</div>
-				
-				<br>
-				<ul class="highlights">
-					
-					<li class="bullet">Very popular app - in 2013 6000 downloads a day were served from http://getsharepod.com</li>
+        <section class="col-md-9 card-wrapper pull-right">
+          <div class="card background-card">
+            <h4 class="text-uppercase text-bolder">Background</h4>
+            <hr>
 
-					<li class="bullet">I successfully negotiated the sale of the company in 2013.</li>
-										
-					<li class="bullet">Implemented in C# as two separate pieces - the UI, and a library containing all the iPod handling code (SharePodLib).  I sold licenses and SharePodLib source code to 200 companies.</li>
-					
-				</ul>
-				
-			</div>
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>WebDebugger for Mac</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://1amstudios.com/projects/sharepod">http://1amstudios.com/projects/webdebuggermac</a>
-				</div>
-				
-				
-				<div class="position">
-					&nbsp;
-				</div>
-				
-				
-				<div class="summary">
-					<p>Native OSX HTTP debugging proxy</p>
-				</div>
-				
-				
-				<br>
-				<ul class="highlights">
-					
-					<li class="bullet">Native OSX app, using Cocoa UI, written in ObjC and C++</li>
+            <div class="background-details">
+              <div class="detail" id="about">
+                <div class="icon">
+                  <i class="fa fa-lg fa-user"></i>
+                  <span class="mobile-title">About</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    About
+                  </h4>
 
-					<li class="bullet">Implemented as 3 separate pieces - the UI, the HTTP proxy library, and GoogleTest unit tests lib for the proxy</li>
-					
-					<li class="bullet">HTTPS tunneling and HTTPS interception supported
-										
-					<li class="bullet">TCP layer implemented using Boost ASIO, and abstracted away to allow unit tests to simulate data sending and receiving</li>
-					
-				</ul>
-				
-			</div>
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>OpenNFS1</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://1amstudios.com/projects/opennfs1">http://1amstudios.com/projects/opennfs1</a>
-				</div>
-				
-				
-				<div class="position">
-					&nbsp;
-				</div>
-				
-				
-				<div class="summary">
-					<p>Open source remake of the Need for Speed 1 DOS game</p>
-				</div>
-				
-			</div>
-				
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>OpenC1</span>
-				</h4>
-				
-				<div class="website pull-right">
-					<a href="http://1amstudios.com/projects/openc1">http://1amstudios.com/projects/openc1</a>
-				</div>
-				
-				
-				<div class="position">
-					&nbsp;
-				</div>
-				
-				
-				<div class="summary">
-					<p>Open source remake of the Carmageddon DOS racing game</p>
-				</div>
-				
-				
-			</div>
+                  <div class="content" itemprop="description">
+                    I love to design and build systems. I really enjoy working with and learning from people with the same passion for software!
+                  </div>
+                </div>
+              </div>
 
-			</div>
+              <div class="detail" id="work-experience">
+                <div class="icon">
+                  <i class="fa fa-lg fa-building"></i>
+                  <span class="mobile-title">Work Experience</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Work Experience
+                  </h4>
 
-	</div>
-	</section>
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Victoria University, Wellington, New Zealand</span>
-					<span class="date">
-						2000 — 2003
-					</span>
-				</h4>
-				
-				<div class="area">
-					Computer Science and Information Systems
-				</div>				
-				
-				<div class="studyType">
-					Bachelor
-				</div>
-				
-				
-			</div>
-			
-			</div>
-		</div>
-	</section>
-	
-	
-	
-	
-	
-	<section id="publications" class="row">
-		<aside class="col-sm-3">
-			<h3>Publications</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Patent: 'Transparently intercepting and optimizing resource requests'</span>
-					<span class="date">
-						2014
-					</span>
-				</h4>			
-				
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Conner and Harris</strong>
-				</div>
-				
-				
-				<div class="summary">
-					<p>Acquire control of dynamically requested resources by overriding native browser properties (for example XmlHttpRequest, 'src' properties)</p>
-				</div>
-				
-			</div>
-			
-			
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Patent: 'Method and system for transmitting data over one or more networks'</span>
-					<span class="date">
-						2011
-					</span>
-				</h4>
-						
-				
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Watson and Harris</strong>
-				</div>
-				
-				
-				<div class="summary">
-					<p>Innovative technique for delivering multiple images in a single response, avoiding some common pitfalls with CSS image sprites</p>
-				</div>
-				
-			</div>
-			
-			
-			</div>
-		</div>
-	</section>
-	
-	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			
-			<div class="col-sm-6">
-				
-				<div class="name">
-					<h4>Languages</h4>
-				</div>
-				
-				
-				<ul class="keywords">
-					
-					<li>C#</li>
-					
-					<li>C++</li>
-					
-					<li>Javascript</li>
-					
-					<li>Python</li>
-					
-					<li>PHP</li>
-					
-				</ul>
-				
-			</div>
-			
-			</div>
-		</div>
-	</section>
-	
-	</div>
-	
-	</body>
+                  <ul class="list-unstyled">
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Manager, Engineering</strong>,&nbsp;
+                              <a href="http://riverbed.com"  target="_blank">Riverbed Ltd</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Jun, 2011 -
+                                  Present
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  3 years 7 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Lead team of four developers and two QA engineers in the Web Content Optimization group</p>
+                            <ul>
+                                <li> Mentored a mix of junior and senior team members </li>
+                                <li> Continually reviewed code with the team checking for object-oriented, modular design and automated test coverage </li>
+                                <li> Prototyped and lead development of a driver to enable our software to run inside VMware NSX virtualized network environment </li>
+                                <li> Implemented the &#x27;Image Stream&#x27; feature (C++ / JavaScript) which I co-designed at Aptimize Ltd. </li>
+                                <li> Ported the Aptimize Windows/C# codebase to Linux/C++ </li>
+                                <li> Designed and built the automated QA framework used every night, enabling QA to focus on testing new features instead of regressions </li>
+                                <li> Designed tools used by all SEs to troubleshoot and demonstrate performance improvements </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Jun, 2011
+                            </p>
+
+                            <p>
+                                <span class="label label-success">
+                                  Currently Working
+                                </span>
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              3 years 7 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Lead Software Development Engineer</strong>,&nbsp;
+                              <a href="http://aptimize.com/"  target="_blank">Aptimize Ltd</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Apr, 2009 -
+                                  Jun, 2011
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  2 years 2 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Designed and implemented large parts of the Aptimize Web Content Optimization engine</p>
+                            <ul>
+                                <li> Team lead to three developers and one QA engineer </li>
+                                <li> Worked on all parts of the Web Content Optimization engine, including the C# core, the C++ IIS bindings, tooling </li>
+                                <li> Interacted directly with customers, went on-site to diagnose and solve issues and always had excellent feedback from the customer </li>
+                                <li> Co-designed and prototyped an &#x27;Image Stream&#x27; feature which serves multiple images to a browser in a single request.  I am one of two authors on the US Patent we hold for this invention. </li>
+                                <li> Developed an enhancement to the Microsoft deflate implementation to create a deflate stream with multiple individually compressed blocks. This enabled a block-replacement feature which allowed us to optimize large, dynamic pages with minimal CPU usage. </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Apr, 2009
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>&nbsp;
+                                Jun, 2011
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              2 years 2 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Software Development Engineer</strong>,&nbsp;
+                              <a href="http://actionthis.com/"  target="_blank">ActionThis Ltd</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Dec, 2005 -
+                                  Apr, 2009
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  3 years 4 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>Online task management system</p>
+                            <ul>
+                                <li> Designed and implemented large parts of the C# back-end server and front-end HTML and JavaScript </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Dec, 2005
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>&nbsp;
+                                Apr, 2009
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              3 years 4 months
+                            </p>
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+                            <strong>Software Development Engineer</strong>,&nbsp;
+                              <a href="http://optimation.co.nz/"  target="_blank">Optimation Ltd</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                Dec, 2003 -
+                                  Dec, 2005
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  2 years
+                                </span>
+                            </small>
+                          </p>
+                          <p>Custom C# and ASP.NET solutions for customers</p>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Joined:</strong>&nbsp;
+                              Dec, 2003
+                            </p>
+
+                            <p>
+                                <strong>Left:</strong>&nbsp;
+                                Dec, 2005
+                            </p>
+                            <p>
+                              <i class="fa fa-clock-o icon-left"></i>
+                              2 years
+                            </p>
+                        </div>
+                      </li>
+                      
+                  </ul>
+                </div>
+              </div>
+
+              <div class="detail" id="skills">
+                <div class="icon">
+                  <i class="fa fa-lg fa-code"></i>
+                  <span class="mobile-title">Personal projects</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Personal projects
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                    <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+
+                              <a href="http://1amstudios.com/projects/sharepod/"  target="_blank">SharePod</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                 -
+                                  Present
+                              </span>
+
+                            </small>
+                          </p>
+                          <p>Windows app to manage music and photos on iPods and iPhones</p>
+                            <ul>
+                                <li> Very popular app - 6000 downloads per day were served from http://getsharepod.com </li>
+                                <li> I successfully negotiated the sale of the company in 2013 </li>
+                                <li> Implemented in C# as two separate projects - the UI, and an API library containing all the iPod handling code. I sold API licenses and source code to 200 companies and individuals. </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+
+                              <a href="http://1amstudios.com/projects/webdebuggermac/"  target="_blank">WebDebugger for Mac</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                 -
+                                  Present
+                              </span>
+
+                            </small>
+                          </p>
+                          <p>Native OSX HTTP debugging proxy</p>
+                            <ul>
+                                <li> Native OSX app, using Cocoa UI, written in ObjC and C++ </li>
+                                <li> I successfully negotiated the sale of the company in 2013 </li>
+                                <li> Implemented as three parts - the UI, the HTTP proxy API, and a library of unit tests for the HTTP proxy </li>
+                                <li> HTTPS tunneling and HTTPS interception supported </li>
+                                <li> TCP layer implemented using async IO, abstracted away to allow unit tests to simulate data sending and receiving </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+
+                              <a href="http://1amstudios.com/projects/opennfs1/"  target="_blank">OpenNFS1</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                 -
+                                  Present
+                              </span>
+
+                            </small>
+                          </p>
+                          <p>Open source remake of the Need for Speed 1 DOS game</p>
+                            <ul>
+                                <li> DirectX, reverse engineered binary file formats </li>
+                                <li> Was asked to come for a job interview at EA Games because of this game </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                        </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                          <p class="clear-margin-sm">
+
+                              <a href="http://1amstudios.com/projects/openc1/"  target="_blank">OpenC1</a>
+                          </p>
+                          <p class="text-muted visible-xs visible-sm">
+                            <small>
+                              <span class="space-right">
+                                 -
+                                  Present
+                              </span>
+
+                            </small>
+                          </p>
+                          <p>Open source remake of the Carmageddon DOS game</p>
+                            <ul>
+                                <li> DirectX, PhysX </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail" id="education">
+                <div class="icon">
+                  <i class="fa fa-lg fa-mortar-board"></i>
+                  <span class="mobile-title">Education</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Education
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested">
+                          <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                              <strong>Computer Science and Information Systems, Bachelor</strong>,&nbsp;
+                              Victoria University, Wellington, New Zealand
+                            </p>
+                            <p class="visible-xs visible-sm text-muted">
+                              <small>
+                                May, 2011 -
+                                  Dec, 2013
+                              </small>
+                            </p>
+                            <i></i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                          <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                              <strong>Started:</strong>&nbsp;
+                              May, 2011
+                            </p>
+                            <p>
+                                <strong>Completion:</strong>&nbsp;
+                                Dec, 2013
+                            </p>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+
+                <div class="detail" id="publications">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-book"></i>
+                    <span class="mobile-title">Publications</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Publications
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                      <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>
+                                    Patent: 'Transparently intercepting and optimizing resource requests'
+                                </strong>,&nbsp;
+                                Conner and Harris
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Published: 2014
+                                </small>
+                              </p>
+                              <p class="clear-margin">Acquire control of dynamically requested resources by overriding native browser properties (for example XmlHttpRequest, 'src' properties)</p>
+                            </div>
+                            <div class="sidebar text-muted text-center hidden-sm hidden-xs">
+                              <p>
+                                <strong>Published:</strong>&nbsp;
+                                2014
+                              </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content has-sidebar">
+                              <p class="clear-margin-sm">
+                                <strong>
+                                    Patent: 'Method and system for transmitting data over one or more networks'
+                                </strong>,&nbsp;
+                                Watson and Harris
+                              </p>
+                              <p class="visible-xs visible-sm text-muted">
+                                <small>
+                                  Published: 2011
+                                </small>
+                              </p>
+                              <p class="clear-margin">Innovative technique for delivering multiple images in a single response, avoiding common issues with CSS sprites</p>
+                            </div>
+                            <div class="sidebar text-muted text-center hidden-sm hidden-xs">
+                              <p>
+                                <strong>Published:</strong>&nbsp;
+                                2011
+                              </p>
+                            </div>
+                          </li>
+                          
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detail" id="interests">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-heart"></i>
+                    <span class="mobile-title">Interests</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Interests
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <p>
+                              <strong>Family, working out, biking, coding</strong>
+                            </p>
+
+                            <div class="space-top labels">
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+  </body>
 </html>
