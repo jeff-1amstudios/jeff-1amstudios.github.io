@@ -15,3 +15,5 @@ permalink:     pretty
 paginate: 4
 exclude: 
     - deploy
+gems:
+   - jekyll-paginate

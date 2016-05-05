@@ -33,10 +33,6 @@ images:
             models, etc) so you can experience OpenC1 without having to own the full original
             game.
         </p>
-        <br />
-        I kept a <a href="http://1amstudios.com/tag/openc1">development diary</a>
-        on my blog which contains lots of detail about the development and challenges of
-        making OpenC1.
     </div>
     <div class="col-md-6">
 
@@ -47,27 +43,42 @@ images:
         <div class="videowrapper" style="margin-top:10px">
             <iframe src="http://www.youtube.com/embed/0afl6ruHZgI" frameborder="0" allowfullscreen></iframe>
        </div>
-        <br />
-        <h4>
-            Older videos - newest are at the top</h4>
-        <ul>
-            <li><a href="http://www.youtube.com/watch?v=qyF-GhPEY2A">Stunts and crashes</a></li>
-            <li><a href="http://www.youtube.com/watch?v=JXaXxoTA4pg">AI opponents</a></li>
-            <li><a href="http://www.youtube.com/watch?v=enIzKAMWeQ4">More advanced vehicle physics</a></li>
-            <li><a href="http://www.youtube.com/watch?v=i36fbuWoSuI">Track animations</a></li>
-            <li><a href="http://www.youtube.com/watch?v=FgQstmM4EJA">Early physics test using PhysX</a></li>
-            <li><a href="http://www.youtube.com/watch?v=fBUbWGTx0C0">Very early phyiscs test using
-                JigLibX</a></li>
-            <li><a href="http://www.youtube.com/watch?v=N4KQ_q5vhwI">First look at the track renderer</a></li>
-        </ul>
-    </div>  
+    </div>
 </div>
-
-
+<p>
+Some videos recorded during development (newest to oldest): 
+    <a href="http://www.youtube.com/watch?v=qyF-GhPEY2A">Stunts and crashes</a>,
+    <a href="http://www.youtube.com/watch?v=JXaXxoTA4pg">AI opponents</a>,
+    <a href="http://www.youtube.com/watch?v=enIzKAMWeQ4">More advanced vehicle physics</a>,
+    <a href="http://www.youtube.com/watch?v=i36fbuWoSuI">Track animations</a>,
+    <a href="http://www.youtube.com/watch?v=FgQstmM4EJA">Early physics test using PhysX</a>,
+    <a href="http://www.youtube.com/watch?v=fBUbWGTx0C0">Very early phyiscs test using
+        JigLibX</a>,
+    <a href="http://www.youtube.com/watch?v=N4KQ_q5vhwI">First look at the track renderer</a>
+</p>
 <div class="row">
 {% for img in page.images %}
   <div class="img-grid col-lg-4 col-md-4 col-sm-6 col-xs-12"><img class="img-responsive" src="/img/openc1/{{img}}" /></div>
 {% endfor %}
 </div>
 
-</div>
+<br />
+    I kept a development diary on my blog which contains lots of detail about the development and challenges of making OpenC1.
+
+<ul>
+    {% assign pages_list = site.tags.OpenC1 | sort: 'date' %}
+
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if group == null or group == node.group %}
+          <li>
+            <a href="{{node.url}}">{{node.title}}</a>
+            <div class="post-meta">{{node.date | date: "%B %d, %Y"}}</div>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+</ul>
