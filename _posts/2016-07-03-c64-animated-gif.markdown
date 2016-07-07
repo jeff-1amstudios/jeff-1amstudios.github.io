@@ -27,11 +27,11 @@ This example image shows how the data for a default single-color sprite is laid 
 </div>
 </div>
 
-The data pointer is only 8 bits, so to make the whole 16kb memory bank addressable, the value in the register is multiplied internally by 64 before fetching the data. Heres some example code to enable sprite #0:
+The sprite data pointer register (like all registers) is only 8 bits, but the sprite data can live anywhere in the active 16kb memory bank - how can that work!? To make the whole 16kb addressable, the value in the register is multiplied by 64 internally by the VIC-II before fetching from memory. In effect, the register selects which of the possible 256 locations to read sprite data from, rather than the raw memory address. The constraint this implies is that we must place sprite data on a 64 byte boundary. Heres some example code to enable sprite #0:
 
 <script src="https://gist.github.com/jeff-1amstudios/254ad8c3bbd1a4c752f0933db4624f27.js"></script>
 
-To animate a C64 sprite, first you need to store multiple 63-byte chunks of sprite data, one after the other, on 64-byte boundaries. (eg at 64, 128, 192...). Then on each screen refresh you change the data pointer to point to the next chunk of sprite data, often by doing a `inc $07f8`. This command adds 1 to the specified memory address. Because the value of the register is multiplied internally by 64, this has the effect of moving the pointer to the start of the next 64 byte chunk of sprite data.  Once you reach the last chunk of sprite data, you reset the pointer back to the initial value, and you have an animation loop!
+To animate a C64 sprite, first you need to store multiple 63-byte chunks of sprite data, one after the other, on 64-byte boundaries. (eg at 64, 128, 192...). Then on each screen refresh you change the data pointer to point to the next chunk of sprite data, by doing `inc $07f8` or similar. This command adds 1 to the specified memory address. Because the value of the register is multiplied internally by 64, this has the effect of moving the pointer to the start of the next 64 byte chunk of sprite data.  Once you reach the last chunk of sprite data, you reset the pointer back to the initial value, and you have an animation loop!
 
 <script src="https://gist.github.com/jeff-1amstudios/7355d73284aab8e4e34aa7119e09c6a5.js"></script>
 
@@ -42,7 +42,7 @@ Now that we know how to animate hardware sprites on the C64 the only trick left 
 
 Instead I wrote [gif-to-c64-sprites](https://github.com/jeff-1amstudios/gif-to-c64-sprites) - a little node script which uses [gifsicle](https://www.npmjs.com/package/gifsicle) and [get-pixels](https://www.npmjs.com/package/get-pixels) to pick out pixel data from each frame in an animated gif. Each frame is converted into a C64 sprite chunk by bitshifting pixels into byte buffers. As it only currently outputs single-color sprites, it works best for cartoon-like source images.
 
-Below are some cool examples I generated using the tool and the C64 sprite animation code above.
+Below are some examples I generated using the tool and the C64 sprite animation code above.
 
 <div class="row" id="examples">
   <div class="col-lg-1"></div>
