@@ -7,12 +7,13 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://1amstudios.com" # the base hostname & protocol for your site
 twitter_username: 1amstudios
 github_username:  jeff-1amstudios
+linkedin_username: jeffrey-harris-6763594
 
 # Build settings
 markdown: kramdown
 permalink:     pretty
 
-paginate: 4
+paginate: 2
 exclude: 
     - deploy
 gems:

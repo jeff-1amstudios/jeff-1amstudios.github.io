@@ -155,8 +155,17 @@ a:hover {
 .post-content img {
     margin: 20px auto;
     display:block;
-    max-width:80%;
 }
+
+.post-content img.gif-replacement {
+    margin: 0px;
+}
+
+.post-content button {
+    outline: none;
+}
+
+.post-content 
 
 .post-content .video {
     margin: 20px auto;
@@ -169,7 +178,7 @@ a:hover {
 }
 
 .post-content .gist-data {
-    max-height:250px;
+    max-height:300px;
 }
 
 .post-meta {
