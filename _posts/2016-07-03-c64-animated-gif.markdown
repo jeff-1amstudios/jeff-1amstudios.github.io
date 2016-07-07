@@ -47,7 +47,7 @@ Below are some examples I generated using the tool and the C64 sprite animation 
 <div class="row" id="examples">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
-    <img data-gifffer="/img/c64/jumping-cat-animation.gif" />
+    <img src="/img/c64/jumping-cat-animation.gif" />
   </div>
   <div class="col-lg-5">
     <a href="http://giphy.com/gifs/cat-funny-cartoon-gdV3ovQ3NY1zO">(Original cat jumping GIF)</a><br>
@@ -56,7 +56,7 @@ Below are some examples I generated using the tool and the C64 sprite animation 
 <div class="row">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
-    <img data-gifffer="/img/c64/running-dog-animation.gif" />
+    <img src="/img/c64/running-dog-animation.gif" />
   </div>
   <div class="col-lg-5">
     <a href="http://www.animatedimages.org/data/media/202/animated-dog-image-0175.gif">(Original dog running GIF)</a>
@@ -65,7 +65,7 @@ Below are some examples I generated using the tool and the C64 sprite animation 
 <div class="row">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
-    <img data-gifffer="/img/c64/typing-animation.gif" />
+    <img src="/img/c64/typing-animation.gif" />
   </div>
   <div class="col-lg-5">
     <a href="http://giphy.com/gifs/keyboard-head-smash-OG8jlh9Pkcpm8">(Original keyboard smashing GIF)</a>
