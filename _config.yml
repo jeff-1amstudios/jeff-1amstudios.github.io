@@ -1,8 +1,8 @@
 # Site settings
-title: 1am Studios
+title: 1am Studios - Jeff Harris dev blog
 email: jeff@1amstudios.com
 description: > # this means to ignore newlines until "baseurl:"
-  (description)
+  Random hacks, tools, products, explorations of retro tech! I am software engineer, sometime entrepreneur, New Zealander living in San Francisco
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://1amstudios.com" # the base hostname & protocol for your site
 twitter_username: 1amstudios
