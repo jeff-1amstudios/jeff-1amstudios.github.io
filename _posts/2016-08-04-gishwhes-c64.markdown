@@ -1,0 +1,36 @@
+---
+layout: post
+title: Rendering GISHWHES logo on Commodore64
+tags:
+- graphics
+- commodore64
+- node
+---
+
+I've had a flood of emails and tweets about how to render the [GISHWHES](https://www.gishwhes.com/) logo on the C64.  I'd never heard of it, but it sounds like a pretty cool treasure hunt held for a week once a year.
+
+And one of the items to create/find is _rendering the GISHWHES logo on a C64/TRS-80/Apple-II._  I don't know about the last two machines, but since I worked on [exactly this for the C64]({% post_url 2016-07-03-c64-animated-gif %}), I've somehow become the goto person for this!
+
+To make it completely fair, I'm just going to post some more detailed steps for how to accomplish the above goal.
+
+Convert gif into a double-sized C64 hardware sprite:
+{% highlight shell %}
+git clone https://github.com/jeff-1amstudios/gif-to-c64-sprites.git
+cd gif-to-c64-sprites
+npm install
+node gif-to-sprite.js --doubleSize /path/to/gishwhes_logo.gif
+{% endhighlight %}
+
+Create and run C64 app:
+{% highlight shell %}
+Edit c64-sample-app/gif_sprite.asm, change .FRAME_COUNT=20 to .FRAME_COUNT=5
+Edit c64-sample-app/main.asm, line 9, replace 'output.spr' with the path to your generated sprite (../output.spr)
+{% endhighlight %}
+Use [ACME cross assembler](https://sourceforge.net/projects/acme-crossass/) to assemble the .asm files into a .prg file.  This file should now be runnable on a C64 emulator.
+
+To get the app onto real hardware is more complex, you'll either need to have a sdcard-backed disk emulator (like [this](https://www.thefuturewas8bit.com/index.php/sd2iec-info)) or write a real floppy disk.  Or, rewrite this code in BASIC and type it out! So many options! :)
+
+![](/img/c64/slangaroo.gif)
+
+
+
