@@ -30,7 +30,5 @@ Use [ACME cross assembler](https://sourceforge.net/projects/acme-crossass/) to a
 
 To get the app onto real hardware is more complex, you'll either need to have a sdcard-backed disk emulator (like [this](https://www.thefuturewas8bit.com/index.php/sd2iec-info)) or write a real floppy disk.  Or, rewrite this code in BASIC and type it out! So many options! :)
 
-![](/img/c64/slangaroo.gif)
-
 
 
