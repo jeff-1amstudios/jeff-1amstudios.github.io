@@ -23,7 +23,7 @@ node gif-to-sprite.js --doubleSize /path/to/gishwhes_logo.gif
 
 Create and run C64 app:
 {% highlight shell %}
-Edit c64-sample-app/gif_sprite.asm, change .FRAME_COUNT=20 to .FRAME_COUNT=5
+Edit c64-sample-app/gif_sprite.asm, change .FRAME_COUNT=20 to .FRAME_COUNT=<number of frames in your gif file>
 Edit c64-sample-app/main.asm, line 9, replace 'output.spr' with the path to your generated sprite (../output.spr)
 {% endhighlight %}
 Use [ACME cross assembler](https://sourceforge.net/projects/acme-crossass/) to assemble the .asm files into a .prg file.  This file should now be runnable on a C64 emulator.

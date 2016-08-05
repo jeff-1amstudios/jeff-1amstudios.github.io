@@ -44,5 +44,8 @@ After some digging, it turns out that the checkpoint scenery descriptor always h
 
 There are no easter eggs unfortunately - it would have been great to find a photo of the dev team or something at the end of a track. But anyway, heres a video showing each of the previously lost sections of the open-road tracks!
 
-<div class="video"><div class="videowrapper"><iframe src="http://www.youtube.com/embed/Xfv_UrDq-As?rel=0" frameborder="0" allowfullscreen></iframe>
-</div></div>
+<div class='embed-container'><iframe src="http://www.youtube.com/embed/Xfv_UrDq-As?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<blockquote class="reddit-card" data-card-preview="0"><a href="https://www.reddit.com/r/gamedev/comments/39ms12/these_pixels_havent_been_seen_for_20_years/?ref=share&ref_source=embed">These pixels haven't been seen for 20 years</a> from <a href="http://www.reddit.com/r/gamedev">gamedev</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>

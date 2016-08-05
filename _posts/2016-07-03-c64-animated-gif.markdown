@@ -79,3 +79,7 @@ When you use the `--doubleSize` option, 4 sprites are generated per frame, by sp
 <img src="/img/c64/4-sprites.png" style="max-width:400px"/>
 
 [https://github.com/jeff-1amstudios/gif-to-c64-sprites](https://github.com/jeff-1amstudios/gif-to-c64-sprites)
+
+Conversation on reddit - 
+<blockquote class="reddit-card" data-card-created="1470121255" data-card-preview="0"><a href="https://www.reddit.com/r/gamedev/comments/4rqnwo/rendering_animated_gifs_on_a_commodore64/?ref=share&ref_source=embed">Rendering animated GIFs on a Commodore64</a> from <a href="http://www.reddit.com/r/gamedev">gamedev</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
