@@ -75,20 +75,6 @@
               New Zealander living in San Francisco.</span></h2>
       </div>
       <div class="col-sm-4 hidden-sm hidden-xs">
-          <br />
-          <div id="carousel1" class="carousel slide">
-              <div class="carousel-inner">
-                  {% for p in site.data.projects %}
-                      {% if p.inCarousel %}
-                        <div class="item {% if p.title == 'WebDebugger for Mac' %}active{% endif %}">
-                            <a href="{{p.url}}">
-                                <img src="{{p.img}}" />
-                            </a>
-                        </div>
-                      {% endif %}
-                  {% endfor %}
-              </div>
-          </div>
       </div>
   </div>
 </div>

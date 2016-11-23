@@ -3,7 +3,7 @@ body {
     font-size:20px;
     color: #515151;
     font-family: 'PT Serif', 'Helvetica Neue', Helvetica;
-    line-height: 1.5;
+
 }
 
 .btn, button {
@@ -133,7 +133,7 @@ a:hover {
 }
 
 .post-title {
-    font-size:25px;
+    font-size:30px;
     font-weight: bold;
     color: #2a6496;
     margin-top:30px;
@@ -157,10 +157,7 @@ a:hover {
 .post-content img {
     margin: 20px auto;
     display:block;
-}
-
-.post-content img.gif-replacement {
-    margin: 0px;
+    max-width: 90%;
 }
 
 .post-content button {
@@ -186,9 +183,8 @@ a:hover {
 .post-meta {
     color: #848484;
     text-transform: uppercase;
-    font-size:11px;
+    font-size:13px;
     font-weight: normal;
-    font-family: Open Sans, "Helvetica Neue", sans-serif;
 }
 
 hr {
@@ -201,4 +197,46 @@ hr {
  float:left;
  margin-bottom:30px;
  margin-right:20px;
+}
+
+.right{
+     text-align: right;
+}
+.protocol-left {
+    background-color: #eee;
+    border-radius: 2px;
+    float:left;
+    clear:all;
+}
+
+.protocol-right {
+    background-color: #ddd;
+    border-radius: 2px;
+    float:right;
+    clear:all;
+}
+
+.mbtablestyle {
+        border-collapse: collapse;
+
+   > table, td, th {
+        border: 1px solid black;
+        }
+}
+
+.pager {
+    font-size:0.9em;
+    line-height: 1em;
+}
+
+.pager p {
+    font-weight: bold;
+    color: #bf5c19;
+}
+.pager a {
+    font-style: italic;
+}
+
+code {
+    font-size: 70%;
 }

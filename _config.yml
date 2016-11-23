@@ -13,8 +13,13 @@ linkedin_username: jeffrey-harris-6763594
 markdown: kramdown
 permalink:     pretty
 
-paginate: 2
+paginate: 3
 exclude: 
     - deploy
 gems:
    - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
