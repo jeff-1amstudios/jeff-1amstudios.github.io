@@ -9,16 +9,16 @@ tags:
 ---
 
 [Slack](http://slack.com) is great. [Many](
-http://www.theatlantic.com/technology/archive/2016/06/slack-eats-internet/488033/) [smarter](https://www.wired.com/2016/06/slack-social-network/) [people](http://arstechnica.com/information-technology/2016/03/what-slack-is-doing-to-our-offices-and-our-minds/) than me also think that Slack is great. Slack is great because it frees me up from dealing with email. With all that free time I &nbsp; <s>relax</s> &nbsp; <s>go the beach</s> &nbsp; <s>write more code</s> &nbsp; send Slack messages instead.
+http://www.theatlantic.com/technology/archive/2016/06/slack-eats-internet/488033/) [smarter](https://www.wired.com/2016/06/slack-social-network/) [people](http://arstechnica.com/information-technology/2016/03/what-slack-is-doing-to-our-offices-and-our-minds/) than me also think that Slack is great. Slack is great because its simple and easier to deal with than emails. With all the time it saves me on emails, I &nbsp; <s>relax</s> &nbsp; <s>go the beach</s> &nbsp; <s>write more code</s> &nbsp; send messages via Slack instead.
 
-Before this sounds like a paid advertisment, lets be fair and balanced. Slack does not have a good native client for the Commodore 64. In fact, they have [no client for Commodore 64](https://slack.com/downloads/) at all!.
+But while Slack might be great, it does not have a great native client for the Commodore 64. In fact, they have [no client for Commodore 64](https://slack.com/downloads/) at all!.
 
 ## _This is clearly a problem._
 <br>
 Following the philosophy of _"send a PR instead of complaining"_, I'd like to present the first (and most likely only) Slack client for Commodore 64.
 ![](/img/c64/slack-header.jpg)
 
-_"Team communication for the 21st century"_ ... with help from 1985!
+_"Team communication for the 21st century"_ ... but backwards compatible with 1985!
 
 The C64 has an extension port called the [Userport](https://www.c64-wiki.com/index.php/User_Port) which, via an adapter, can communicate over RS-232 serial. I connected the Userport to a Raspberry Pi with a artisanal, locally sourced, homemade cable with the UserPort connector on one end, and a usb TTL-RS-232 converter on the other.  The fastest I have been able to run this reliably is a solid 1200 baud (a whole 150 bytes per second!).
 
