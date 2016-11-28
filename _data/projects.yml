@@ -28,8 +28,8 @@
   url:   "/projects/iphonediskdrive"
   inCarousel:   false
 
-- title:   "iTunes Library Editor"
-  img:   "/img/code-icon.png"
-  summary:   "Edit an iTunes music library without using the iTunes SDK"
-  url:   "/projects/ituneslibraryeditor"
-  inCarousel:   false
+# - title:   "iTunes Library Editor"
+#   img:   "/img/code-icon.png"
+#   summary:   "Edit an iTunes music library without using the iTunes SDK"
+#   url:   "/projects/ituneslibraryeditor"
+#   inCarousel:   false
