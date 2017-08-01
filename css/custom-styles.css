@@ -23,22 +23,6 @@ body {
 
 /* End bootstrap overrides */
 
-.carousel-indicators
-{
-    bottom:0px;
-}
-
-.carousel-inner .item img
-{
-}
-
-#carousel1
-{
-    width:200px;
-    float:right;
-    margin-bottom:20px;
-}
-
 .jumbo
 {
     background-image: url("/img/blur-bg.jpg");
@@ -191,31 +175,6 @@ hr {
     border-top: 1px solid #ddd;
 }
 
-.img-circular{
- width:150px;
- height:auto;
- float:left;
- margin-bottom:30px;
- margin-right:20px;
-}
-
-.right{
-     text-align: right;
-}
-.protocol-left {
-    background-color: #eee;
-    border-radius: 2px;
-    float:left;
-    clear:all;
-}
-
-.protocol-right {
-    background-color: #ddd;
-    border-radius: 2px;
-    float:right;
-    clear:all;
-}
-
 .mbtablestyle {
         border-collapse: collapse;
 
@@ -238,5 +197,12 @@ hr {
 }
 
 code {
-    font-size: 70%;
+    font-size: 80%;
+}
+
+.quote {
+    background-color: #62abea;
+    color:white;
+    font-style: italic;
+    font-size:30px;
 }
