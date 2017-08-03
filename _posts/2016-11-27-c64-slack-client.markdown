@@ -6,6 +6,7 @@ tags:
 - node
 - slack
 - assembly
+- project
 ---
 
 [Slack](http://slack.com) is great. [Many](

@@ -1,6 +1,12 @@
 ---
 layout: post
 title: Carmageddon 1 debugging symbols dumped
+tags:
+  - project
+  - carmageddon
+  - debugging
+  - hacking
+  - watcom
 ---
 
 _TL;DR - Dumped a 17 year old debugging symbol file for a game called Carmageddon. Take a look at the [symbols](https://github.com/jeff-1amstudios/carmageddon1-symbol-dump) folder to see the output._

@@ -8,6 +8,7 @@ url: "http://1amstudios.com" # the base hostname & protocol for your site
 twitter_username: 1amstudios
 github_username:  jeff-1amstudios
 linkedin_username: jeffrey-harris-6763594
+youtube_username: 1amStudios
 
 # Build settings
 markdown: kramdown

@@ -4,18 +4,28 @@ permalink: /projects/
 title: Projects
 ---
 
-  {% for p in site.data.projects %}
+{% assign pages_list = site.tags.project | sort: 'date' |  reverse  %}
+{% for node in pages_list %}
   <div class="row">
-      
-          <a href="{{p.url}}">
-            <img src="{{p.img}}" alt="{{p.title}}" class="img-circular">
-          </a>
-          <a href="{{p.url}}">{{p.title}}</a>
-          <br>
-            <span style="color:#777">{{p.summary}}</span>
+    <p>
+      <a href="{{node.url}}">{{node.title}}</a>
+      <br>
+      <span style="color:#777; font-style:italic">{{ node.content | strip_html | truncatewords: 20 }}</span>
+    </p>
+  </div>
+{% endfor %}
+{% assign pages_list = nil %}
+
+{% for p in site.data.projects %}
+  <div class="row">
+    <p>
+      <a href="{{p.url}}">{{p.title}}</a>
+      <br>
+      <span style="color:#777; font-style:italic">{{p.summary}}</span>
+    </p>
   </div>
   
-  {% endfor %}
+{% endfor %}
 
   <script type="text/javascript">
     $("#projectsLink").attr("class", "active");
