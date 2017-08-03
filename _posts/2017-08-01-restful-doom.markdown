@@ -27,7 +27,7 @@ TL;DR I embedded a RESTful API into the classic 1993 game DOOM, allowing the gam
 
 Doom was created by a small team at [ID Software](https://en.wikipedia.org/wiki/Id_Software). Wikipedia describes it as one of the most significant and influential titles in video game history, and growing up I loved playing it. As an adult I couldn't put down a book called [Masters of DOOM](https://en.wikipedia.org/wiki/Masters_of_Doom), which describes the back story of ID Software.
 
-ID Software has a super cool practice of releasing source code for a game after its commercial release. For the kind of hackers who lurk on [/r/gamedev](https://reddit.com/r/gamedev), an ID Software engine is an amazing resource to learn from. And lo, in 1997, the Doom engine [source code](https://github.com/id-Software/DOOM) was released, causing much happiness!
+ID Software has a super cool practice of releasing source code for their games. For the kind of hackers who lurk on [/r/gamedev](https://reddit.com/r/gamedev), an ID Software engine is an amazing resource to learn from. And lo, in 1997, the Doom engine [source code](https://github.com/id-Software/DOOM) was released, causing much happiness!
 
 ## 2017
 I was having trouble finding a fun API to use in a talk I had to do. I had spent the normal amount of time procrastinating and stressing about having to give the talk, and wasn't making any progress on building a compelling demo.  
@@ -51,9 +51,9 @@ chocolate-doom already uses [SDL](https://www.libsdl.org/), so I added an `-apip
 The first change I made was to edit `D_ProcessEvents` (the Doom main loop), to add a call to our new API servicing method [`API_RunIO`](https://github.com/jeff-1amstudios/restful-doom/blob/master/src/doom/api.c#L65). This calls 
 `SDLNet_TCP_Accept` which accepts a new client, or immediately returns NULL if there are no clients.  
 If we have a new client, we add its socket to a SocketSet by calling `SDLNet_TCP_AddSocket`. Being part of a SocketSet allows us to use the non-blocking `SDLNet_CheckSockets` every tic to determine if there is data available.  
-If we do have data, [`API_ParseRequest`](https://github.com/jeff-1amstudios/restful-doom/blob/master/src/doom/api.c#L111) attempts to parse the data as an HTTP request, using basic C string functions like `sscanf` and `strstr`.  I used [cJSON](https://github.com/DaveGamble/cJSON) and [yuarel](https://github.com/jacketizer/libyuarel/) libraries to parse JSON and URI strings respectively.
+If we do have data, [`API_ParseRequest`](https://github.com/jeff-1amstudios/restful-doom/blob/master/src/doom/api.c#L111) attempts to parse the data as an HTTP request, using basic C string functions. I used [cJSON](https://github.com/DaveGamble/cJSON) and [yuarel](https://github.com/jacketizer/libyuarel/) libraries to parse JSON and URI strings respectively.
 
-Routing an HTTP request involves looking at the [method and path](https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html), and calling the right implementation for the requested action. Below is a snippet from the [`API_RouteRequest`](https://github.com/jeff-1amstudios/restful-doom/blob/master/src/doom/api.c#L143) method:
+Routing an HTTP request involves looking at the [method and path](https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html), then calling the right implementation for the requested action. Below is a snippet from the [`API_RouteRequest`](https://github.com/jeff-1amstudios/restful-doom/blob/master/src/doom/api.c#L143) method:
 
 {% highlight C %}
 if (strcmp(path, "api/player") == 0)
@@ -105,7 +105,7 @@ Map objects ([mobj_t](https://github.com/jeff-1amstudios/restful-doom/blob/maste
 
 [![](/img/restful-doom/get-nearby-objects.jpg)](/img/restful-doom/get-nearby-objects.jpg)
 
-To create a new map object, we call the existing `P_SpawnMobj()` with a position and type. This returns us an `mobj_t*` that we can update with other properties from the API request.
+To create a new map object, we call the existing `P_SpawnMobj` with a position and type. This returns us an `mobj_t*` that we can update with other properties from the API request.
 
 [![](/img/restful-doom/post-scenery.jpg)](/img/restful-doom/post-scenery.jpg)
 
