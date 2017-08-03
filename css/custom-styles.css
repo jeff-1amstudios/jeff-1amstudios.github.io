@@ -132,6 +132,7 @@ a:hover {
     color: #515151;
     font-family: 'PT Serif', 'Helvetica Neue', Helvetica;
     line-height: 1.5;
+    margin-bottom: 60px;
 }
 
 .post-content a {
@@ -147,8 +148,6 @@ a:hover {
 .post-content button {
     outline: none;
 }
-
-.post-content 
 
 .post-content .video {
     margin: 20px auto;
