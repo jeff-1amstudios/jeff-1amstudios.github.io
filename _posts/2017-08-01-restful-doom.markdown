@@ -123,8 +123,14 @@ I wrote the [API spec](https://github.com/jeff-1amstudios/restful-doom/blob/mast
 
 ## Putting it all together
 
-So now we are have an HTTP+JSON server inside Doom, interfacing with Doom objects in memory, and have written a public API specification for it. Phew!  
+So now we have an HTTP+JSON server inside Doom, interfacing with Doom objects in memory, and have written a public API specification for it. Phew!  
 We can now query and manipulate this 24 year old game from any REST API client - heres a video proving exactly that! Enjoy ;)
+
+[restful-doom on GitHub](https://github.com/jeff-1amstudios/restful-doom/)
+
 <div class='embed-container'><iframe src="http://www.youtube.com/embed/Km6_AwzZmf0?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
+<br>  
+
+
 
