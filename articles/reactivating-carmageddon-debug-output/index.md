@@ -165,7 +165,7 @@ After shall we say - _"plenty"_ - of attempts, it actually works! It blows my mi
 
 After patching my own `CARM95.EXE`, I captured this video showing Carmageddon 1 on the left and a live view of the `DIAGNOST.TXT` on the right. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rd3hTH1XgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/rd3hTH1XgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 The most interesting debug content relates to the AI opponent vehicles. They run through a state engine where they might be racing or actively attacking the player.
 
@@ -185,6 +185,6 @@ The full code including instructions on how to apply the patch or modify it are 
 ### References
 <a id="references"></a>
 
-[[1] https://github.com/jeff-1amstudios/carmageddon1-symbol-dump/blob/master/symbols/DETHRACE/source/common/errors.c#L20-L22]()
+[[1] https://github.com/jeff-1amstudios/carmageddon1-symbol-dump/.../errors.c#L20-L22](https://github.com/jeff-1amstudios/carmageddon1-symbol-dump/blob/master/symbols/DETHRACE/source/common/errors.c#L20-L22)
 
 [[2] https://carmageddon.fandom.com/wiki/Music]()
