@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 'Reactivating Carmageddons debug output'
+title: 'Reactivating Carmageddon''s debug output'
 categories: [article]
 date: '2022-07-04'
 
@@ -165,9 +165,7 @@ After shall we say - _"plenty"_ - of attempts, it actually works! It blows my mi
 
 After patching my own `CARM95.EXE`, I captured this video showing Carmageddon 1 on the left and a live view of the `DIAGNOST.TXT` on the right. 
 
-<div class="video">
-<div class="videowrapper"><iframe src="//www.youtube.com/embed/rd3hTH1XgG0?rel=0" frameborder="0"></iframe></div>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rd3hTH1XgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The most interesting debug content relates to the AI opponent vehicles. They run through a state engine where they might be racing or actively attacking the player.
 
