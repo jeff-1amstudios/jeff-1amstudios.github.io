@@ -3,9 +3,11 @@ layout: default
 ---
 
 <h1>Articles</h1>
-{% for p in site.pages %}
+{% assign sorted_pages = site.pages | sort:"date" | reverse %}
+{% for p in sorted_pages %}
 {% if p.categories contains 'article' %}
-{{ p.date | date: "%Y-%m-%d"}}: <a href="{{ p.url | absolute_url }}">{{ p.title }}</a>
-<small>{{ p.excerpt }}</small>
+<p>{{ p.date | date: "%Y-%m-%d"}}: <a href="{{ p.url | absolute_url }}">{{ p.title }}</a>
+    <small>{{ p.excerpt }}</small>
+</p>
 {% endif %}
 {% endfor %}
