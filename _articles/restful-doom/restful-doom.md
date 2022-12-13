@@ -1,8 +1,8 @@
 ---
 layout: article
 title: 'RESTful DOOM'
-categories: [article]
 date: '2017-08-01'
+permalink: /:collection/:name/
 ---
 
 <p class="small">

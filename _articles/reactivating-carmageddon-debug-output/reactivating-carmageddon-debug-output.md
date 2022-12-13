@@ -1,8 +1,8 @@
 ---
 layout: article
 title: 'Reactivating Carmageddon''s debug output'
-categories: [article]
 date: '2022-07-04'
+permalink: /:collection/:name/
 
 ---
 

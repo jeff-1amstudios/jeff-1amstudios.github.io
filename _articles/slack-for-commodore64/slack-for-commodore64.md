@@ -1,8 +1,8 @@
 ---
 layout: article
 title: Slack client for Commodore 64
-categories: [article]
 date: 2016-11-27
+permalink: /:collection/:name/
 ---
 
 [Slack](http://slack.com) is great. [Many](

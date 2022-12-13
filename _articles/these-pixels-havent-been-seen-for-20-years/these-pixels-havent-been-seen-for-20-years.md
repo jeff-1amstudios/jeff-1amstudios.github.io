@@ -1,8 +1,8 @@
 ---
 layout: article
-categories: [article]
 date: 2015-06-05
 title: These pixels haven't been seen by anyone for 20 years
+permalink: /:collection/:name/
 ---
 
 # Need for Speed 1

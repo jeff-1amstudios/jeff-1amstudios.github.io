@@ -1,8 +1,8 @@
 ---
 layout: article
 title: 'Do NOT run Carmageddon 2 from the server'
-categories: [article]
 date: '2022-12-10'
+permalink: /:collection/:name/
 
 ---
 
