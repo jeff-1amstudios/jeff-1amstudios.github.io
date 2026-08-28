@@ -54,7 +54,7 @@ img { max-width:100%; height:auto; }
 .article a,.page-body a { color:var(--rust); text-decoration:underline; text-underline-offset:3px; }
 .article blockquote { margin:2rem 0; padding:1px 24px; border-left:3px solid var(--rust); color:var(--muted); }
 .article code { font-family:"IBM Plex Mono",monospace; font-size:.86em; }
-.article p code,.article li code,.article td code,.page-body p code,.page-body li code { padding:.12em .36em; border:1px solid #d6cdbc; border-radius:3px; background:var(--code); color:#763a2c; white-space:break-spaces; }
+.article p code,.article li code,.article td code,.page-body p code,.page-body li code { padding:.12em .36em; border:1px solid #d6cdbc; border-radius:3px; background:var(--code); color:#763a2c; white-space:break-spaces; overflow-wrap:anywhere; }
 .article pre,.article .highlight { overflow-x:auto; padding:20px; border:1px solid #d6cdbc; border-radius:3px; background:var(--code); color:#763a2c; font-family:"IBM Plex Mono",monospace; }
 .article pre code,.article .highlight code,.article .highlight span { padding:0; border:0; background:transparent; color:inherit; font-family:"IBM Plex Mono",monospace; }
 .article .highlight span { color:inherit!important; }
