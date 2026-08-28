@@ -3,6 +3,8 @@ layout: article
 title: Slack client for Commodore 64
 date: 2016-11-27
 permalink: /:collection/:name/
+image: /img/c64/slack-header.jpg
+summary: '"Team communication for the 21st century" ... now backwards compatible with 1985!'
 ---
 
 [Slack](http://slack.com) is great. [Many](

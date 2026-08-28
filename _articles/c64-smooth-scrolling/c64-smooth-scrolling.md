@@ -3,6 +3,8 @@ layout: article
 title: How to implement smooth full-screen scrolling on c64
 date: 2014-12-07
 permalink: /articles/c64-smooth-scrolling/
+image: /img/c64/static.png
+summary: "Instead I'll just write about how to implement smooth scrolling on it, because who doesn't want that?"
 ---
 
 # How to implement smooth full-screen scrolling on c64

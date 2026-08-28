@@ -3,6 +3,8 @@ layout: article
 title: 'Reactivating Carmageddon''s debug output'
 date: '2022-07-04'
 permalink: /:collection/:name/
+image: /articles/reactivating-carmageddon-debug-output/hangontoyerhelmet2.jpg
+summary: And yet...! The executable still contains those messages, so maybe we can re-enable them somehow.
 
 ---
 

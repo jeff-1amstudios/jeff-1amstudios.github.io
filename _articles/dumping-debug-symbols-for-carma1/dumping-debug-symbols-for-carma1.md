@@ -3,6 +3,8 @@ layout: article
 title: Carmageddon 1 debugging symbols dumped
 date: 2014-12-02
 permalink: /:collection/:name/
+image: /img/c1-symbols-filesystem.png
+summary: Dumped a 17 year old debugging symbol file for a game called Carmageddon.
 ---
 
 _TL;DR - Dumped a 17 year old debugging symbol file for a game called Carmageddon. Take a look at the [symbols](https://github.com/jeff-1amstudios/carmageddon1-symbol-dump) folder to see the output._

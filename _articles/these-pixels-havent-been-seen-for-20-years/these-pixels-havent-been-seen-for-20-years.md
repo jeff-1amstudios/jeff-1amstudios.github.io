@@ -3,6 +3,8 @@ layout: article
 date: 2015-06-05
 title: These pixels haven't been seen by anyone for 20 years
 permalink: /:collection/:name/
+image: /img/opennfs1/past-checkpoint-looking-back.jpg
+summary: What adventures lie beyond the checkpoint?
 ---
 
 # Need for Speed 1

@@ -1,21 +1,30 @@
 ---
-layout: page
+layout: default
 title: Articles
 permalink: /articles/
 ---
 
-<div class="library-intro">
-  <p>The site has gradually shifted from a chronological blog into a library of writeups: reverse engineering notes, project postmortems, experiments with retro hardware, and product detours.</p>
-</div>
+<section class="library-page">
+  <header class="library-page__header">
+    <h1>Articles</h1>
+    <p>The site has gradually shifted from a chronological blog into a library of writeups: reverse engineering notes, project postmortems, experiments with retro hardware, and product detours.</p>
+  </header>
 
-<section class="library-section">
-  <div class="library-list">
+  <div class="selected-grid">
     {% assign articles = site.articles | sort: "date" | reverse %}
     {% for item in articles %}
-      <a class="library-row" href="{{ item.url }}"><span>{{ item.title }}</span></a>
+      <article class="selected-card">
+        <a class="selected-card__media" href="{{ item.url }}"><img src="{{ item.image }}" alt="{{ item.title }}"></a>
+        <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+        <p>{{ item.summary }}</p>
+      </article>
     {% endfor %}
     {% for item in site.data.projects %}
-      <a class="library-row" href="{{ item.url }}"><span>{{ item.title }}</span></a>
+      <article class="selected-card">
+        <a class="selected-card__media" href="{{ item.url }}"><img src="{{ item.img }}" alt="{{ item.title }}"></a>
+        <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+        <p>{{ item.summary }}</p>
+      </article>
     {% endfor %}
   </div>
 </section>

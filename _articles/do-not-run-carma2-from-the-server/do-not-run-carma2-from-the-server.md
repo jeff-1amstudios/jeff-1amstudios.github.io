@@ -3,6 +3,8 @@ layout: article
 title: 'Do NOT run Carmageddon 2 from the server'
 date: '2022-12-10'
 permalink: /:collection/:name/
+image: /articles/do-not-run-carma2-from-the-server/success.png
+summary: 'During Carmageddon 2 development, there was a problem with people running Carmageddon 2 on "the server".'
 
 ---
 
@@ -137,4 +139,3 @@ void CheckIfRunningOnServer() {
     }
 }
 {% endhighlight %}
-

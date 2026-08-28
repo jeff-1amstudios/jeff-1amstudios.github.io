@@ -3,6 +3,8 @@ layout: article
 title: 'RESTful DOOM'
 date: '2017-08-01'
 permalink: /:collection/:name/
+image: /img/restful-doom/header.jpg
+summary: I embedded a RESTful API into the classic 1993 game DOOM, allowing the game to be queried and controlled using HTTP and JSON.
 ---
 
 <p class="small">
@@ -125,6 +127,5 @@ We can now query and manipulate this 24 year old game from any REST API client -
 <div class='embed-container'><iframe src="http://www.youtube.com/embed/Km6_AwzZmf0?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 <br>  
-
 
 
