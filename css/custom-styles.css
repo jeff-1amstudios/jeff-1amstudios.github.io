@@ -11,7 +11,8 @@ img { max-width:100%; height:auto; }
 .site-header { border-bottom:1px solid var(--line); }
 .site-header__inner { display:grid; grid-template-columns:1fr auto auto; align-items:center; gap:42px; padding:26px 0 22px; }
 .site-brand { display:flex; align-items:baseline; gap:14px; }
-.site-brand__name { font:600 26px "Fraunces",Georgia,serif; letter-spacing:-.02em; }
+.site-brand__name { font:400 24px "Russo One",sans-serif; letter-spacing:-.02em; }
+.site-brand__one { color:var(--rust); }
 .site-brand__kicker,.section-kicker,.article-card__date,.article-date,.feature-card__meta,.site-footer__eyebrow { font:10px "IBM Plex Mono",monospace; letter-spacing:.14em; text-transform:uppercase; }
 .site-brand__kicker,.section-kicker,.text-link { color:var(--rust); }
 .site-nav,.site-social { display:flex; gap:30px; }
