@@ -2,57 +2,34 @@
 layout: default
 ---
 
-<section class="home-hero">
-  <h1>Old games, old binaries, old tools.</h1>
-  <div class="home-hero__lower">
-    <p>I'm Jeff Harris, a software engineer from New Zealand.</p>
-    <p>The site has gradually shifted from a chronological blog into a library of writeups: reverse engineering notes, project postmortems, experiments with retro hardware, and product detours from earlier parts of my career.</p>
+<section class="editorial-feature">
+  <div class="editorial-feature__copy">
+    <p class="section-kicker">Featured article</p>
+    <h1><a href="/articles/these-pixels-havent-been-seen-for-20-years/">These pixels haven't been seen by anyone for 20 years</a></h1>
+    <p>When I played this game back as a kid, I was fascinated with what lay beyond. It seems like the track keeps going. What is around the next bend, over the next hill?</p>
+    <p class="feature-card__meta">June 5, 2015 · Need for Speed 1</p>
+    <a class="text-link" href="/articles/these-pixels-havent-been-seen-for-20-years/">Read article →</a>
   </div>
-</section>
-
-<section class="feature-card">
-  <div class="feature-card__copy">
-    <p class="section-kicker">OpenNFS1 · 2015</p>
-    <h2><a href="/articles/these-pixels-havent-been-seen-for-20-years/">These pixels haven't been seen by anyone for 20 years</a></h2>
-    <p>When I played this game back as a kid, I was fascinated with what lay beyond. It seems like the track keeps going. What is around the next bend, over the next hill? No-one knows except for the original developers!</p>
-    <p class="feature-card__meta">Need for Speed 1</p>
-  </div>
-  <div class="feature-card__media">
+  <a class="editorial-feature__media" href="/articles/these-pixels-havent-been-seen-for-20-years/">
     <img src="/img/opennfs1/past-checkpoint-looking-back.jpg" alt="A Need for Speed track beyond the checkpoint">
-  </div>
+  </a>
 </section>
 
 <section class="home-section">
-  <div class="section-heading">
-    <h2>Articles</h2>
-    <p class="section-kicker">Reverse engineering notes · Experiments with retro hardware</p>
-  </div>
-  <div class="article-grid">
-    <article class="article-card"><p class="article-card__date">22</p><div><h3><a href="/articles/do-not-run-carma2-from-the-server/">Do NOT run Carmageddon 2 from the server</a></h3><p>During Carmageddon 2 development, there was a problem with people running Carmageddon 2 on <em>“the server”</em>.</p></div></article>
-    <article class="article-card"><p class="article-card__date">22</p><div><h3><a href="/articles/reactivating-carmageddon-debug-output/">Reactivating Carmageddon's debug output</a></h3><p>And yet...! The executable still contains those messages, so maybe we can re-enable them somehow.</p></div></article>
-    <article class="article-card"><p class="article-card__date">17</p><div><h3><a href="/articles/restful-doom/">RESTful DOOM</a></h3><p>I could have some fun digging around the Doom source code and solve my API problem at the same time!</p></div></article>
-    <article class="article-card"><p class="article-card__date">16</p><div><h3><a href="/articles/slack-for-commodore64/">Slack client for Commodore 64</a></h3><p>The fastest I have been able to run this reliably is a solid 1200 baud / 150 bytes per second.</p></div></article>
-    <article class="article-card"><p class="article-card__date">14</p><div><h3><a href="/2014/12/07/c64-smooth-scrolling/">How to implement smooth full-screen scrolling on c64</a></h3><p>Instead I'll just write about how to implement smooth scrolling on it, because who doesn't want that?</p></div></article>
-    <article class="article-card"><p class="article-card__date">14</p><div><h3><a href="/articles/dumping-debug-symbols-for-carma1/">Carmageddon 1 debugging symbols dumped</a></h3><p>So what do we have after all that work?</p></div></article>
+  <div class="section-heading"><h2>Selected articles</h2><a class="text-link" href="/articles/">View all articles →</a></div>
+  <div class="selected-grid">
+    <article class="selected-card"><a class="selected-card__media" href="/articles/reactivating-carmageddon-debug-output/"><img src="/articles/reactivating-carmageddon-debug-output/hangontoyerhelmet2.jpg" alt="Carmageddon"></a><p class="article-card__date">July 4, 2022</p><h3><a href="/articles/reactivating-carmageddon-debug-output/">Reactivating Carmageddon's debug output</a></h3><p>And yet...! The executable still contains those messages, so maybe we can re-enable them somehow.</p></article>
+    <article class="selected-card"><a class="selected-card__media" href="/articles/restful-doom/"><img src="/img/restful-doom/header.jpg" alt="RESTful DOOM"></a><p class="article-card__date">August 1, 2017</p><h3><a href="/articles/restful-doom/">RESTful DOOM</a></h3><p>I embedded a RESTful API into the classic 1993 game DOOM, allowing the game to be queried and controlled using HTTP and JSON.</p></article>
+    <article class="selected-card"><a class="selected-card__media" href="/articles/slack-for-commodore64/"><img src="/img/c64/slack-header.jpg" alt="Slack on a Commodore 64"></a><p class="article-card__date">November 27, 2016</p><h3><a href="/articles/slack-for-commodore64/">Slack client for Commodore 64</a></h3><p>“Team communication for the 21st century” ... now backwards compatible with 1985!</p></article>
+    <article class="selected-card"><a class="selected-card__media" href="/2014/12/07/c64-smooth-scrolling/"><img src="/img/c64/static.png" alt="Commodore 64 scrolling example"></a><p class="article-card__date">December 7, 2014</p><h3><a href="/2014/12/07/c64-smooth-scrolling/">How to implement smooth full-screen scrolling on c64</a></h3><p>Instead I'll just write about how to implement smooth scrolling on it, because who doesn't want that?</p></article>
   </div>
 </section>
 
-<section class="home-section home-section--split">
-  <div>
-    <div class="section-heading"><h2>Projects</h2></div>
-    <div class="project-list">
-      {% for project in site.data.projects limit: 4 %}
-        <a class="project-row" href="{{ project.url }}">
-          <div class="project-row__media"><img src="{{ project.img }}" alt="{{ project.title }}"></div>
-          <div class="project-row__copy"><h3>{{ project.title }}</h3><p>{{ project.summary }}</p></div>
-        </a>
-      {% endfor %}
-    </div>
+<section class="home-section projects-home">
+  <div class="section-heading"><h2>Projects</h2><a class="text-link" href="/projects/">View all projects →</a></div>
+  <div class="project-list">
+    {% for project in site.data.projects limit: 4 %}
+      <a class="project-row" href="{{ project.url }}"><div class="project-row__media"><img src="{{ project.img }}" alt="{{ project.title }}"></div><div><h3>{{ project.title }}</h3><p>{{ project.summary }}</p></div></a>
+    {% endfor %}
   </div>
-  <aside class="archive-panel">
-    <p class="section-kicker">About</p>
-    <h2>A library of writeups</h2>
-    <p>If you're here for the main themes, start with the articles on Carmageddon, Need for Speed, DOOM, and Commodore 64 projects.</p>
-    <a class="text-link" href="/about/">About</a>
-  </aside>
 </section>
