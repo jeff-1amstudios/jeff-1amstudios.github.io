@@ -21,6 +21,18 @@ permalink: /articles/
   </div>
 </section>
 
+<section class="library-section" id="projects">
+  <div class="section-heading"><h2>Projects and tools</h2></div>
+  <div class="library-list">
+    {% for item in site.data.projects %}
+      <a class="library-row library-row--project" href="{{ item.url }}">
+        <span>{{ item.title }}</span>
+        <small>{{ item.summary }}</small>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="library-section">
   <div class="section-heading"><h2>From the archive</h2><p class="section-kicker">{{ site.posts | size }} posts</p></div>
   <div class="library-list">

@@ -74,6 +74,8 @@ img { max-width:100%; height:auto; }
 .library-row { display:grid; grid-template-columns:80px 1fr; gap:24px; padding:15px 0; border-bottom:1px solid var(--line); }
 .library-row time { color:var(--rust); font:12px "IBM Plex Mono",monospace; }
 .library-row span { font:20px/1.25 "PT Serif","Helvetica Neue",Helvetica,serif; }
+.library-row--project { grid-template-columns:minmax(220px,.7fr) 1.3fr; }
+.library-row--project small { color:var(--muted); font-size:14px; }
 .site-footer { border-top:1px solid var(--line); }
 .site-footer__inner { display:flex; justify-content:space-between; gap:30px; padding:24px 0 34px; }
 .site-footer p { margin:0; color:var(--muted); font-size:11px; }

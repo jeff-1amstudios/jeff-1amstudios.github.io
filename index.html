@@ -26,7 +26,7 @@ layout: default
 </section>
 
 <section class="home-section projects-home">
-  <div class="section-heading"><h2>Projects</h2><a class="text-link" href="/projects/">View all projects →</a></div>
+  <div class="section-heading"><h2>Projects and tools</h2><a class="text-link" href="/articles/#projects">View all →</a></div>
   <div class="project-list">
     {% for project in site.data.projects limit: 4 %}
       <a class="project-row" href="{{ project.url }}"><div class="project-row__media"><img src="{{ project.img }}" alt="{{ project.title }}"></div><div><h3>{{ project.title }}</h3><p>{{ project.summary }}</p></div></a>
