@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 'Do NOT run Carmageddon 2 from the server'
+title: 'Do NOT run Carmageddon 2 from the server!'
 date: '2022-12-10'
 permalink: /:collection/:name/
 image: /articles/do-not-run-carma2-from-the-server/success.png
@@ -8,7 +8,7 @@ summary: 'During Carmageddon 2 development, there was a problem with people runn
 
 ---
 
-# Do NOT run Carmageddon 2 from the server
+# Do NOT run Carmageddon 2 from the server!
 
 During Carmageddon 2 development, there was a problem with people running Carmageddon 2 on _"the server"_. 
 
