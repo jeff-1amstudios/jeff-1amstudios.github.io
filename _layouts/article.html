@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html>
-
-{% include head.html %}
-
-<body>
-
-    {% include header.html %}
-    <div class="container">
-        <div class="article">
-            {{ content }}
-        </div>
-    </div>
-
-    {% include footer.html %}
-
-</body>
-
-</html>
+---
+layout: default
+---
+<article class="article-shell">
+  <div class="article-meta">
+    <p class="section-kicker">Article</p>
+    {% if page.date %}
+      <p class="article-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+    {% endif %}
+  </div>
+  <div class="article">
+    {{ content }}
+  </div>
+</article>

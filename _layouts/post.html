@@ -1,38 +1,18 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h2 class="post-title">{{ page.title }}</h2>
-    <div class="post-meta">
-    {{ page.date | date: "%b %-d, %Y" }} 
-<!--       {% for tag in page.tags %}
-        <a href="/tags#{{ tag }}" class="tag">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
-      {% endfor %} -->
-    </div>
-  </header>
-
-  <article class="post-content">
+<article class="article-shell">
+  <div class="article-meta">
+    <p class="section-kicker">From the archive</p>
+    <p class="article-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+  </div>
+  <div class="article">
+    <h1>{{ page.title }}</h1>
     {{ content }}
-  </article>
-</div>
+  </div>
+</article>
 
-<hr>
-<nav>
-    <div class="row pager">
-      <div class="col-md-6 text-left">
-        {% if page.previous.url %}
-          <p>PREVIOUS POST</p>
-          <a href="{{ page.previous.url }}">{{page.previous.title}}</a>
-        {% endif %}
-      </div>
-      <div class="col-md-6 text-right">
-        {% if page.next.url %}
-          <p>NEXT POST</p>
-          <a href="{{ page.next.url }}">{{page.next.title}}</a>
-        {% endif %}
-      </div>
-    </div>
+<nav class="post-pagination" aria-label="More from the archive">
+  {% if page.previous.url %}<a href="{{ page.previous.url }}"><span>Previous</span>{{ page.previous.title }}</a>{% endif %}
+  {% if page.next.url %}<a href="{{ page.next.url }}"><span>Next</span>{{ page.next.title }}</a>{% endif %}
 </nav>
-<hr>

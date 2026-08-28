@@ -1,0 +1,34 @@
+---
+layout: page
+title: Articles
+permalink: /articles/
+---
+
+<div class="library-intro">
+  <p>The site has gradually shifted from a chronological blog into a library of writeups: reverse engineering notes, project postmortems, experiments with retro hardware, and product detours from earlier parts of my career.</p>
+</div>
+
+<section class="library-section">
+  <div class="section-heading"><h2>Long-form articles</h2></div>
+  <div class="library-list">
+    {% assign articles = site.articles | sort: "date" | reverse %}
+    {% for item in articles %}
+      <a class="library-row" href="{{ item.url }}">
+        <time>{{ item.date | date: "%Y" }}</time>
+        <span>{{ item.title }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="library-section">
+  <div class="section-heading"><h2>From the archive</h2><p class="section-kicker">{{ site.posts | size }} posts</p></div>
+  <div class="library-list">
+    {% for item in site.posts %}
+      <a class="library-row" href="{{ item.url }}">
+        <time>{{ item.date | date: "%Y" }}</time>
+        <span>{{ item.title }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>

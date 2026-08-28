@@ -4,29 +4,34 @@ permalink: /projects/
 title: Projects
 ---
 
-{% assign pages_list = site.tags.project | sort: 'date' |  reverse  %}
-{% for node in pages_list %}
-  <div class="row">
-    <p>
-      <a href="{{node.url}}">{{node.title}}</a>
-      <br>
-      <span style="color:#777; font-style:italic">{{ node.content | strip_html | truncatewords: 20 }}</span>
-    </p>
-  </div>
-{% endfor %}
-{% assign pages_list = nil %}
+<div class="section-heading">
+  <h2>Projects</h2>
+</div>
 
-{% for p in site.data.projects %}
-  <div class="row">
-    <p>
-      <a href="{{p.url}}">{{p.title}}</a>
-      <br>
-      <span style="color:#777; font-style:italic">{{p.summary}}</span>
-    </p>
-  </div>
-  
-{% endfor %}
+<div class="project-list">
+  {% assign pages_list = site.tags.project | sort: 'date' | reverse %}
+  {% for node in pages_list %}
+    <a class="project-row" href="{{ node.url }}">
+      <div class="project-row__media">
+        <img src="/img/openc1/cityb-3.jpg" alt="{{ node.title }}">
+      </div>
+      <div class="project-row__copy">
+        <h3>{{ node.title }}</h3>
+        <p>{{ node.content | strip_html | truncatewords: 24 }}</p>
+      </div>
+    </a>
+  {% endfor %}
+  {% assign pages_list = nil %}
 
-  <script type="text/javascript">
-    $("#projectsLink").attr("class", "active");
-  </script>
+  {% for p in site.data.projects %}
+    <a class="project-row" href="{{ p.url }}">
+      <div class="project-row__media">
+        <img src="{{ p.img }}" alt="{{ p.title }}">
+      </div>
+      <div class="project-row__copy">
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.summary }}</p>
+      </div>
+    </a>
+  {% endfor %}
+</div>
