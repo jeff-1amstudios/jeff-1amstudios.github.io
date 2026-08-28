@@ -57,7 +57,7 @@ img { max-width:100%; height:auto; }
 .article .highlight span { color:inherit!important; }
 .article pre,.article .highlight pre,.article pre code,.article .highlight code,.article .highlight span { font-size:17.2px; line-height:1.5; }
 .article .highlight pre { margin:0; padding:0; overflow:visible; border:0; border-radius:0; background:transparent; }
-.article img { margin:24px auto; border:1px solid var(--line); }
+.article img { margin:24px auto; }
 .article .floatleft { float:left; margin:8px 28px 20px 0; }
 .article .floatright { float:right; margin:8px 0 20px 28px; }
 .embed-container,.article .videowrapper { position:relative; width:100%; height:0; padding-bottom:56.25%; overflow:hidden; }
