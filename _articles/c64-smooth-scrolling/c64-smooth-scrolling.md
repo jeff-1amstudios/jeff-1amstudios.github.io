@@ -2,7 +2,7 @@
 layout: article
 title: How to implement smooth full-screen scrolling on c64
 date: 2014-12-07
-permalink: /2014/12/07/c64-smooth-scrolling/
+permalink: /articles/c64-smooth-scrolling/
 ---
 
 # How to implement smooth full-screen scrolling on c64
