@@ -14,7 +14,8 @@ permalink: /articles/
     {% for item in articles %}
       <a class="library-row" href="{{ item.url }}"><span>{{ item.title }}</span></a>
     {% endfor %}
-    {% for item in site.posts %}
+    {% assign promoted_posts = site.posts | where: "article", true %}
+    {% for item in promoted_posts %}
       <a class="library-row" href="{{ item.url }}"><span>{{ item.title }}</span></a>
     {% endfor %}
     {% for item in site.data.projects %}

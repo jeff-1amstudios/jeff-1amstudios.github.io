@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to implement smooth full-screen scrolling on c64
+article: true
 ---
 
 <img src="/img/c64/c64.png" style="float:right" class="hidden-sm" />
