@@ -7,7 +7,7 @@ layout: default
     <p class="section-kicker">Featured article</p>
     <h1><a href="/articles/these-pixels-havent-been-seen-for-20-years/">These pixels haven't been seen by anyone for 20 years</a></h1>
     <p>When I played this game back as a kid, I was fascinated with what lay beyond. It seems like the track keeps going. What is around the next bend, over the next hill?</p>
-    <p class="feature-card__meta">June 5, 2015 · Need for Speed 1</p>
+    <p class="feature-card__meta">Need for Speed 1</p>
     <a class="text-link" href="/articles/these-pixels-havent-been-seen-for-20-years/">Read article →</a>
   </div>
   <a class="editorial-feature__media" href="/articles/these-pixels-havent-been-seen-for-20-years/">
@@ -18,18 +18,9 @@ layout: default
 <section class="home-section">
   <div class="section-heading"><h2>Selected articles</h2><a class="text-link" href="/articles/">View all articles →</a></div>
   <div class="selected-grid">
-    <article class="selected-card"><a class="selected-card__media" href="/articles/reactivating-carmageddon-debug-output/"><img src="/articles/reactivating-carmageddon-debug-output/hangontoyerhelmet2.jpg" alt="Carmageddon"></a><p class="article-card__date">July 4, 2022</p><h3><a href="/articles/reactivating-carmageddon-debug-output/">Reactivating Carmageddon's debug output</a></h3><p>And yet...! The executable still contains those messages, so maybe we can re-enable them somehow.</p></article>
-    <article class="selected-card"><a class="selected-card__media" href="/articles/restful-doom/"><img src="/img/restful-doom/header.jpg" alt="RESTful DOOM"></a><p class="article-card__date">August 1, 2017</p><h3><a href="/articles/restful-doom/">RESTful DOOM</a></h3><p>I embedded a RESTful API into the classic 1993 game DOOM, allowing the game to be queried and controlled using HTTP and JSON.</p></article>
-    <article class="selected-card"><a class="selected-card__media" href="/articles/slack-for-commodore64/"><img src="/img/c64/slack-header.jpg" alt="Slack on a Commodore 64"></a><p class="article-card__date">November 27, 2016</p><h3><a href="/articles/slack-for-commodore64/">Slack client for Commodore 64</a></h3><p>“Team communication for the 21st century” ... now backwards compatible with 1985!</p></article>
-    <article class="selected-card"><a class="selected-card__media" href="/2014/12/07/c64-smooth-scrolling/"><img src="/img/c64/static.png" alt="Commodore 64 scrolling example"></a><p class="article-card__date">December 7, 2014</p><h3><a href="/2014/12/07/c64-smooth-scrolling/">How to implement smooth full-screen scrolling on c64</a></h3><p>Instead I'll just write about how to implement smooth scrolling on it, because who doesn't want that?</p></article>
-  </div>
-</section>
-
-<section class="home-section projects-home">
-  <div class="section-heading"><h2>Projects and tools</h2><a class="text-link" href="/articles/#projects">View all →</a></div>
-  <div class="project-list">
-    {% for project in site.data.projects limit: 4 %}
-      <a class="project-row" href="{{ project.url }}"><div class="project-row__media"><img src="{{ project.img }}" alt="{{ project.title }}"></div><div><h3>{{ project.title }}</h3><p>{{ project.summary }}</p></div></a>
-    {% endfor %}
+    <article class="selected-card"><a class="selected-card__media" href="/articles/reactivating-carmageddon-debug-output/"><img src="/articles/reactivating-carmageddon-debug-output/hangontoyerhelmet2.jpg" alt="Carmageddon"></a><h3><a href="/articles/reactivating-carmageddon-debug-output/">Reactivating Carmageddon's debug output</a></h3><p>And yet...! The executable still contains those messages, so maybe we can re-enable them somehow.</p></article>
+    <article class="selected-card"><a class="selected-card__media" href="/articles/restful-doom/"><img src="/img/restful-doom/header.jpg" alt="RESTful DOOM"></a><h3><a href="/articles/restful-doom/">RESTful DOOM</a></h3><p>I embedded a RESTful API into the classic 1993 game DOOM, allowing the game to be queried and controlled using HTTP and JSON.</p></article>
+    <article class="selected-card"><a class="selected-card__media" href="/articles/slack-for-commodore64/"><img src="/img/c64/slack-header.jpg" alt="Slack on a Commodore 64"></a><h3><a href="/articles/slack-for-commodore64/">Slack client for Commodore 64</a></h3><p>“Team communication for the 21st century” ... now backwards compatible with 1985!</p></article>
+    <article class="selected-card"><a class="selected-card__media" href="/2014/12/07/c64-smooth-scrolling/"><img src="/img/c64/static.png" alt="Commodore 64 scrolling example"></a><h3><a href="/2014/12/07/c64-smooth-scrolling/">How to implement smooth full-screen scrolling on c64</a></h3><p>Instead I'll just write about how to implement smooth scrolling on it, because who doesn't want that?</p></article>
   </div>
 </section>

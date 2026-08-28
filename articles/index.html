@@ -9,38 +9,16 @@ permalink: /articles/
 </div>
 
 <section class="library-section">
-  <div class="section-heading"><h2>Long-form articles</h2></div>
   <div class="library-list">
     {% assign articles = site.articles | sort: "date" | reverse %}
     {% for item in articles %}
-      <a class="library-row" href="{{ item.url }}">
-        <time>{{ item.date | date: "%Y" }}</time>
-        <span>{{ item.title }}</span>
-      </a>
+      <a class="library-row" href="{{ item.url }}"><span>{{ item.title }}</span></a>
     {% endfor %}
-  </div>
-</section>
-
-<section class="library-section" id="projects">
-  <div class="section-heading"><h2>Projects and tools</h2></div>
-  <div class="library-list">
-    {% for item in site.data.projects %}
-      <a class="library-row library-row--project" href="{{ item.url }}">
-        <span>{{ item.title }}</span>
-        <small>{{ item.summary }}</small>
-      </a>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="library-section">
-  <div class="section-heading"><h2>From the archive</h2><p class="section-kicker">{{ site.posts | size }} posts</p></div>
-  <div class="library-list">
     {% for item in site.posts %}
-      <a class="library-row" href="{{ item.url }}">
-        <time>{{ item.date | date: "%Y" }}</time>
-        <span>{{ item.title }}</span>
-      </a>
+      <a class="library-row" href="{{ item.url }}"><span>{{ item.title }}</span></a>
+    {% endfor %}
+    {% for item in site.data.projects %}
+      <a class="library-row" href="{{ item.url }}"><span>{{ item.title }}</span></a>
     {% endfor %}
   </div>
 </section>

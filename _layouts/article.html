@@ -2,12 +2,6 @@
 layout: default
 ---
 <article class="article-shell">
-  <div class="article-meta">
-    <p class="section-kicker">Article</p>
-    {% if page.date %}
-      <p class="article-date">{{ page.date | date: "%B %-d, %Y" }}</p>
-    {% endif %}
-  </div>
   <div class="article">
     {{ content }}
   </div>
