@@ -1,8 +1,11 @@
 ---
-layout: post
+layout: article
 title: How to implement smooth full-screen scrolling on c64
-article: true
+date: 2014-12-07
+permalink: /2014/12/07/c64-smooth-scrolling/
 ---
+
+# How to implement smooth full-screen scrolling on c64
 
 <img src="/img/c64/c64.png" style="float:right" class="hidden-sm" />
 Programming in assembly for a Commodore 64 wasn't ever on my bucket list, or even my [Trello](http://www.trello.com) list. But I got drawn into it anway by reading ['Programming the Atari ST 20 years later'](http://www.voidbred.com/blog/2014/09/programming-the-atari-st-20-years-later/) which made assembly and old computers sound fun. But after beating up my brain trying to follow the Atari ST [bitplane](http://www.codetapper.com/amiga/maptapper/documentation/gfx/gfx-mode)-[based](http://www.atarimagazines.com/compute/issue80/the_great_graphics_leap.php) [graphics](http://mikro.naprvyraz.sk/docs/Coding/Atari/Undercover/C2P_2.TXT), I <s>wanted</s> needed something simpler. Enter the c64! I could go on about the [specs](https://www.youtube.com/watch?v=ZsRRCnque2E), [the thousands of games](http://gamebase64.com/search.php?h=0), [the active demoscene](http://www.pouet.net/prodlist.php?platform%5B%5D=Commodore%2064), this [amazingly great tutorial site](http://dustlayer.com), or that [the entire programmers guide is a single txt file](http://www.zimmers.net/cbmpics/cbm/c64/c64prg.txt). People much better at writing and explaining have already talked forever about all of those things. Instead I'll just write about how to implement smooth scrolling on it, because who doesn't want that?
